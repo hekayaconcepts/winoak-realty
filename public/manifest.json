@@ -1,0 +1,27 @@
+{
+  "name": "The African Property Brief",
+  "short_name": "APB",
+  "description": "Investor-grade real estate intelligence for Kenya and emerging African property markets",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2a4347",
+  "theme_color": "#2a4347",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://d64gsuwffb70l.cloudfront.net/696a15fcf7f37ab46f03b95f_1768560149377_0263ab94.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://d64gsuwffb70l.cloudfront.net/696a15fcf7f37ab46f03b95f_1768560149377_0263ab94.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "finance", "news"],
+  "lang": "en",
+  "dir": "ltr"
+}
