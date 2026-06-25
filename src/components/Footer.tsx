@@ -178,7 +178,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span style={{ fontFamily: 'Kaisei Opti, serif' }}>HELLENAWINI@GMAIL.COM</span>
+                <span style={{ fontFamily: 'Kaisei Opti, serif' }}>hellenawini@gmail.com</span>
               </div>
             </div>
           </div>
