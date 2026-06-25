@@ -89,19 +89,19 @@ const NotificationPreferences: React.FC<NotificationPreferencesProps> = ({ userI
   if (loading) {
     return (
       <div className="flex items-center justify-center py-12">
-        <Loader2 className="w-6 h-6 text-[#eaae31] animate-spin" />
+        <Loader2 className="w-6 h-6 text-[#febd14] animate-spin" />
       </div>
     );
   }
 
   return (
-    <div className="bg-[#1e3235] rounded-xl border border-white/10 overflow-hidden">
+    <div className="bg-[#5c090f] rounded-xl border border-white/10 overflow-hidden">
       {/* Header */}
       <div className="p-6 border-b border-white/10">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-lg bg-[#eaae31]/10 flex items-center justify-center">
-              <Bell className="w-5 h-5 text-[#eaae31]" />
+            <div className="w-10 h-10 rounded-lg bg-[#febd14]/10 flex items-center justify-center">
+              <Bell className="w-5 h-5 text-[#febd14]" />
             </div>
             <div>
               <h3 className="text-white font-semibold" style={{ fontFamily: 'Kaisei Opti, serif' }}>
@@ -130,7 +130,7 @@ const NotificationPreferences: React.FC<NotificationPreferencesProps> = ({ userI
           {/* New Listings */}
           <label className="flex items-center justify-between p-4 bg-white/5 rounded-lg cursor-pointer hover:bg-white/[0.07] transition-colors">
             <div className="flex items-center gap-3">
-              <Building2 className="w-5 h-5 text-[#eaae31]" />
+              <Building2 className="w-5 h-5 text-[#febd14]" />
               <div>
                 <p className="text-white text-sm font-medium" style={{ fontFamily: 'Kaisei Opti, serif' }}>New Property Listings</p>
                 <p className="text-white/40 text-xs" style={{ fontFamily: 'Kaisei Opti, serif' }}>Get notified when new listings match your preferences</p>
@@ -138,7 +138,7 @@ const NotificationPreferences: React.FC<NotificationPreferencesProps> = ({ userI
             </div>
             <button
               onClick={() => setPreferences(prev => ({ ...prev, email_new_listings: !prev.email_new_listings }))}
-              className={`relative w-12 h-6 rounded-full transition-colors ${preferences.email_new_listings ? 'bg-[#eaae31]' : 'bg-white/20'}`}
+              className={`relative w-12 h-6 rounded-full transition-colors ${preferences.email_new_listings ? 'bg-[#febd14]' : 'bg-white/20'}`}
             >
               <div className={`absolute top-0.5 w-5 h-5 rounded-full bg-white shadow transition-transform ${preferences.email_new_listings ? 'translate-x-6' : 'translate-x-0.5'}`} />
             </button>
@@ -155,7 +155,7 @@ const NotificationPreferences: React.FC<NotificationPreferencesProps> = ({ userI
             </div>
             <button
               onClick={() => setPreferences(prev => ({ ...prev, email_new_articles: !prev.email_new_articles }))}
-              className={`relative w-12 h-6 rounded-full transition-colors ${preferences.email_new_articles ? 'bg-[#eaae31]' : 'bg-white/20'}`}
+              className={`relative w-12 h-6 rounded-full transition-colors ${preferences.email_new_articles ? 'bg-[#febd14]' : 'bg-white/20'}`}
             >
               <div className={`absolute top-0.5 w-5 h-5 rounded-full bg-white shadow transition-transform ${preferences.email_new_articles ? 'translate-x-6' : 'translate-x-0.5'}`} />
             </button>
@@ -172,7 +172,7 @@ const NotificationPreferences: React.FC<NotificationPreferencesProps> = ({ userI
             </div>
             <button
               onClick={() => setPreferences(prev => ({ ...prev, email_weekly_digest: !prev.email_weekly_digest }))}
-              className={`relative w-12 h-6 rounded-full transition-colors ${preferences.email_weekly_digest ? 'bg-[#eaae31]' : 'bg-white/20'}`}
+              className={`relative w-12 h-6 rounded-full transition-colors ${preferences.email_weekly_digest ? 'bg-[#febd14]' : 'bg-white/20'}`}
             >
               <div className={`absolute top-0.5 w-5 h-5 rounded-full bg-white shadow transition-transform ${preferences.email_weekly_digest ? 'translate-x-6' : 'translate-x-0.5'}`} />
             </button>
@@ -183,7 +183,7 @@ const NotificationPreferences: React.FC<NotificationPreferencesProps> = ({ userI
         {preferences.email_new_listings && (
           <div className="space-y-3">
             <h4 className="text-white/70 text-sm font-medium" style={{ fontFamily: 'Kaisei Opti, serif' }}>
-              <Building2 className="w-4 h-4 inline mr-2 text-[#eaae31]" />
+              <Building2 className="w-4 h-4 inline mr-2 text-[#febd14]" />
               Preferred Property Types
             </h4>
             <p className="text-white/40 text-xs" style={{ fontFamily: 'Kaisei Opti, serif' }}>
@@ -196,7 +196,7 @@ const NotificationPreferences: React.FC<NotificationPreferencesProps> = ({ userI
                   onClick={() => toggleArrayItem('preferred_property_types', type)}
                   className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${
                     (preferences.preferred_property_types || []).includes(type)
-                      ? 'bg-[#eaae31] text-[#2a4347]'
+                      ? 'bg-[#febd14] text-[#5c090f]'
                       : 'bg-white/5 text-white/60 hover:bg-white/10 border border-white/10'
                   }`}
                   style={{ fontFamily: 'Kaisei Opti, serif' }}
@@ -212,7 +212,7 @@ const NotificationPreferences: React.FC<NotificationPreferencesProps> = ({ userI
         {preferences.email_new_listings && (
           <div className="space-y-3">
             <h4 className="text-white/70 text-sm font-medium" style={{ fontFamily: 'Kaisei Opti, serif' }}>
-              <MapPin className="w-4 h-4 inline mr-2 text-[#eaae31]" />
+              <MapPin className="w-4 h-4 inline mr-2 text-[#febd14]" />
               Preferred Cities
             </h4>
             <p className="text-white/40 text-xs" style={{ fontFamily: 'Kaisei Opti, serif' }}>
@@ -225,7 +225,7 @@ const NotificationPreferences: React.FC<NotificationPreferencesProps> = ({ userI
                   onClick={() => toggleArrayItem('preferred_cities', city)}
                   className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${
                     (preferences.preferred_cities || []).includes(city)
-                      ? 'bg-[#eaae31] text-[#2a4347]'
+                      ? 'bg-[#febd14] text-[#5c090f]'
                       : 'bg-white/5 text-white/60 hover:bg-white/10 border border-white/10'
                   }`}
                   style={{ fontFamily: 'Kaisei Opti, serif' }}
@@ -241,7 +241,7 @@ const NotificationPreferences: React.FC<NotificationPreferencesProps> = ({ userI
         {preferences.email_new_listings && (
           <div className="space-y-3">
             <h4 className="text-white/70 text-sm font-medium" style={{ fontFamily: 'Kaisei Opti, serif' }}>
-              <DollarSign className="w-4 h-4 inline mr-2 text-[#eaae31]" />
+              <DollarSign className="w-4 h-4 inline mr-2 text-[#febd14]" />
               Price Range (KES)
             </h4>
             <div className="grid grid-cols-2 gap-3">
@@ -252,7 +252,7 @@ const NotificationPreferences: React.FC<NotificationPreferencesProps> = ({ userI
                   value={preferences.min_price || ''}
                   onChange={(e) => setPreferences(prev => ({ ...prev, min_price: e.target.value ? Number(e.target.value) : undefined }))}
                   placeholder="No minimum"
-                  className="w-full px-3 py-2.5 bg-white/5 border border-white/10 rounded-lg text-white text-sm placeholder-white/30 focus:outline-none focus:border-[#eaae31]/50"
+                  className="w-full px-3 py-2.5 bg-white/5 border border-white/10 rounded-lg text-white text-sm placeholder-white/30 focus:outline-none focus:border-[#febd14]/50"
                   style={{ fontFamily: 'Kaisei Opti, serif' }}
                 />
               </div>
@@ -263,7 +263,7 @@ const NotificationPreferences: React.FC<NotificationPreferencesProps> = ({ userI
                   value={preferences.max_price || ''}
                   onChange={(e) => setPreferences(prev => ({ ...prev, max_price: e.target.value ? Number(e.target.value) : undefined }))}
                   placeholder="No maximum"
-                  className="w-full px-3 py-2.5 bg-white/5 border border-white/10 rounded-lg text-white text-sm placeholder-white/30 focus:outline-none focus:border-[#eaae31]/50"
+                  className="w-full px-3 py-2.5 bg-white/5 border border-white/10 rounded-lg text-white text-sm placeholder-white/30 focus:outline-none focus:border-[#febd14]/50"
                   style={{ fontFamily: 'Kaisei Opti, serif' }}
                 />
               </div>
@@ -288,7 +288,7 @@ const NotificationPreferences: React.FC<NotificationPreferencesProps> = ({ userI
                   onClick={() => toggleArrayItem('preferred_categories', cat.id)}
                   className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${
                     (preferences.preferred_categories || []).includes(cat.id)
-                      ? 'bg-green-400 text-[#2a4347]'
+                      ? 'bg-green-400 text-[#5c090f]'
                       : 'bg-white/5 text-white/60 hover:bg-white/10 border border-white/10'
                   }`}
                   style={{ fontFamily: 'Kaisei Opti, serif' }}
@@ -305,7 +305,7 @@ const NotificationPreferences: React.FC<NotificationPreferencesProps> = ({ userI
           <button
             onClick={savePreferences}
             disabled={saving}
-            className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-[#eaae31] text-[#2a4347] font-semibold rounded-lg hover:bg-[#eaae31]/90 transition-colors disabled:opacity-50"
+            className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-[#febd14] text-[#5c090f] font-semibold rounded-lg hover:bg-[#febd14]/90 transition-colors disabled:opacity-50"
             style={{ fontFamily: 'Kaisei Opti, serif' }}
           >
             {saving ? (

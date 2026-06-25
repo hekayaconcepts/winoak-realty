@@ -28,7 +28,7 @@ const NewsletterSection: React.FC<NewsletterSectionProps> = ({ variant = 'defaul
 
   if (variant === 'minimal') {
     return (
-      <div className="bg-[#1e3235] rounded-xl p-6 border border-white/5">
+      <div className="bg-[#5c090f] rounded-xl p-6 border border-white/5">
         <h3 
           className="text-white text-lg font-semibold mb-2"
           style={{ fontFamily: 'Kaisei Opti, serif' }}
@@ -54,13 +54,13 @@ const NewsletterSection: React.FC<NewsletterSectionProps> = ({ variant = 'defaul
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Your email"
-              className="flex-1 px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#eaae31] transition-colors"
+              className="flex-1 px-4 py-2 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#febd14] transition-colors"
               style={{ fontFamily: 'Kaisei Opti, serif' }}
             />
             <button
               type="submit"
               disabled={status === 'loading'}
-              className="px-4 py-2 bg-[#eaae31] text-[#2a4347] rounded-lg hover:bg-[#eaae31]/90 transition-colors disabled:opacity-50"
+              className="px-4 py-2 bg-[#febd14] text-[#5c090f] rounded-lg hover:bg-[#febd14]/90 transition-colors disabled:opacity-50"
             >
               <ArrowRight className="w-5 h-5" />
             </button>
@@ -75,9 +75,9 @@ const NewsletterSection: React.FC<NewsletterSectionProps> = ({ variant = 'defaul
 
   if (variant === 'hero') {
     return (
-      <section className="py-20 md:py-28 bg-gradient-to-br from-[#2a4347] via-[#1e3235] to-[#2a4347]">
+      <section className="py-20 md:py-28 bg-gradient-to-br from-[#5c090f] via-[#5c090f] to-[#5c090f]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#eaae31]/10 text-[#eaae31] text-sm mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#febd14]/10 text-[#febd14] text-sm mb-6">
             <Mail className="w-4 h-4" />
             <span style={{ fontFamily: 'Kaisei Opti, serif' }}>Join 15,000+ investors</span>
           </div>
@@ -114,13 +114,13 @@ const NewsletterSection: React.FC<NewsletterSectionProps> = ({ variant = 'defaul
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email address"
-                className="flex-1 px-6 py-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 text-base focus:outline-none focus:border-[#eaae31] transition-colors"
+                className="flex-1 px-6 py-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 text-base focus:outline-none focus:border-[#febd14] transition-colors"
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
               />
               <button
                 type="submit"
                 disabled={status === 'loading'}
-                className="px-8 py-4 bg-[#eaae31] text-[#2a4347] text-base font-semibold rounded-xl hover:bg-[#eaae31]/90 transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
+                className="px-8 py-4 bg-[#febd14] text-[#5c090f] text-base font-semibold rounded-xl hover:bg-[#febd14]/90 transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
               >
                 {status === 'loading' ? 'Subscribing...' : 'Subscribe'}
@@ -146,7 +146,7 @@ const NewsletterSection: React.FC<NewsletterSectionProps> = ({ variant = 'defaul
 
   // Default variant
   return (
-    <section className="py-16 md:py-20 bg-[#1e3235]">
+    <section className="py-16 md:py-20 bg-[#5c090f]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div>
@@ -183,13 +183,13 @@ const NewsletterSection: React.FC<NewsletterSectionProps> = ({ variant = 'defaul
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email"
-                  className="flex-1 px-5 py-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 text-base focus:outline-none focus:border-[#eaae31] transition-colors"
+                  className="flex-1 px-5 py-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 text-base focus:outline-none focus:border-[#febd14] transition-colors"
                   style={{ fontFamily: 'Kaisei Opti, serif' }}
                 />
                 <button
                   type="submit"
                   disabled={status === 'loading'}
-                  className="px-8 py-4 bg-[#eaae31] text-[#2a4347] text-base font-semibold rounded-xl hover:bg-[#eaae31]/90 transition-colors disabled:opacity-50"
+                  className="px-8 py-4 bg-[#febd14] text-[#5c090f] text-base font-semibold rounded-xl hover:bg-[#febd14]/90 transition-colors disabled:opacity-50"
                   style={{ fontFamily: 'Kaisei Opti, serif' }}
                 >
                   {status === 'loading' ? 'Subscribing...' : 'Subscribe'}

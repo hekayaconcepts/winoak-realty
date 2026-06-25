@@ -29,8 +29,8 @@ const PodcastView: React.FC<PodcastViewProps> = ({
       <section className="py-12 md:py-16 border-b border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-12 h-12 rounded-full bg-[#eaae31]/10 flex items-center justify-center">
-              <Headphones className="w-6 h-6 text-[#eaae31]" />
+            <div className="w-12 h-12 rounded-full bg-[#febd14]/10 flex items-center justify-center">
+              <Headphones className="w-6 h-6 text-[#febd14]" />
             </div>
             <h1 
               className="text-white text-3xl md:text-4xl font-bold"
@@ -71,7 +71,7 @@ const PodcastView: React.FC<PodcastViewProps> = ({
 
       {/* All Episodes */}
       {olderEpisodes.length > 0 && (
-        <section className="py-8 md:py-12 bg-[#1e3235]">
+        <section className="py-8 md:py-12 bg-[#5c090f]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 
               className="text-white text-xl font-semibold mb-6"
@@ -96,7 +96,7 @@ const PodcastView: React.FC<PodcastViewProps> = ({
       {/* Subscribe Section */}
       <section className="py-16 md:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Volume2 className="w-12 h-12 text-[#eaae31] mx-auto mb-6" />
+          <Volume2 className="w-12 h-12 text-[#febd14] mx-auto mb-6" />
           <h2 
             className="text-white text-2xl md:text-3xl font-bold mb-4"
             style={{ fontFamily: 'Kaisei Opti, serif' }}
@@ -107,7 +107,7 @@ const PodcastView: React.FC<PodcastViewProps> = ({
             className="text-white/60 text-lg mb-8"
             style={{ fontFamily: 'Kaisei Opti, serif' }}
           >
-            Subscribe to The African Property Brief podcast on your favorite platform.
+            Subscribe to WinOak Realty podcast on your favorite platform.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             {['Apple Podcasts', 'Spotify', 'Google Podcasts', 'RSS Feed'].map((platform) => (

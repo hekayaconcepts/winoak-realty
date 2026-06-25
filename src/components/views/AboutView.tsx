@@ -58,7 +58,7 @@ const AboutView: React.FC<AboutViewProps> = ({ onNavigate }) => {
             className="text-white text-3xl md:text-5xl font-bold mb-6"
             style={{ fontFamily: 'Kaisei Opti, serif' }}
           >
-            About The African Property Brief
+            About WinOak Realty
           </h1>
           <p 
             className="text-white/70 text-lg md:text-xl leading-relaxed"
@@ -75,7 +75,7 @@ const AboutView: React.FC<AboutViewProps> = ({ onNavigate }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#eaae31]/10 text-[#eaae31] text-sm mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#febd14]/10 text-[#febd14] text-sm mb-6">
                 <Target className="w-4 h-4" />
                 <span style={{ fontFamily: 'Kaisei Opti, serif' }}>Our Mission</span>
               </div>
@@ -96,7 +96,7 @@ const AboutView: React.FC<AboutViewProps> = ({ onNavigate }) => {
                 className="text-white/70 text-lg leading-relaxed"
                 style={{ fontFamily: 'Kaisei Opti, serif', lineHeight: 1.7 }}
               >
-                The African Property Brief publishes investor-grade analysis, curates vetted property 
+                WinOak Realty publishes investor-grade analysis, curates vetted property 
                 opportunities, and educates investors on how African real estate actually works—from 
                 capital behavior to trust structures to deal risk.
               </p>
@@ -107,15 +107,15 @@ const AboutView: React.FC<AboutViewProps> = ({ onNavigate }) => {
                 alt="Nairobi Skyline"
                 className="rounded-xl shadow-2xl"
               />
-              <div className="absolute -bottom-6 -left-6 bg-[#eaae31] rounded-xl p-6 shadow-xl">
+              <div className="absolute -bottom-6 -left-6 bg-[#febd14] rounded-xl p-6 shadow-xl">
                 <p 
-                  className="text-[#2a4347] text-3xl font-bold"
+                  className="text-[#5c090f] text-3xl font-bold"
                   style={{ fontFamily: 'Kaisei Opti, serif' }}
                 >
                   Since 2020
                 </p>
                 <p 
-                  className="text-[#2a4347]/70 text-sm"
+                  className="text-[#5c090f]/70 text-sm"
                   style={{ fontFamily: 'Kaisei Opti, serif' }}
                 >
                   Serving global investors
@@ -127,7 +127,7 @@ const AboutView: React.FC<AboutViewProps> = ({ onNavigate }) => {
       </section>
 
       {/* Who We Serve */}
-      <section className="py-16 md:py-24 bg-[#1e3235]">
+      <section className="py-16 md:py-24 bg-[#5c090f]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 
@@ -153,7 +153,7 @@ const AboutView: React.FC<AboutViewProps> = ({ onNavigate }) => {
             ].map((item, index) => (
               <div 
                 key={index}
-                className="p-6 bg-[#2a4347] rounded-xl border border-white/5"
+                className="p-6 bg-[#5c090f] rounded-xl border border-white/5"
               >
                 <h3 
                   className="text-white text-lg font-semibold mb-2"
@@ -195,10 +195,10 @@ const AboutView: React.FC<AboutViewProps> = ({ onNavigate }) => {
             {values.map((value, index) => (
               <div 
                 key={index}
-                className="p-8 bg-[#1e3235] rounded-xl border border-white/5 hover:border-[#eaae31]/30 transition-all"
+                className="p-8 bg-[#5c090f] rounded-xl border border-white/5 hover:border-[#febd14]/30 transition-all"
               >
-                <div className="w-12 h-12 rounded-lg bg-[#eaae31]/10 flex items-center justify-center mb-4">
-                  <value.icon className="w-6 h-6 text-[#eaae31]" />
+                <div className="w-12 h-12 rounded-lg bg-[#febd14]/10 flex items-center justify-center mb-4">
+                  <value.icon className="w-6 h-6 text-[#febd14]" />
                 </div>
                 <h3 
                   className="text-white text-xl font-semibold mb-3"
@@ -219,9 +219,9 @@ const AboutView: React.FC<AboutViewProps> = ({ onNavigate }) => {
       </section>
 
       {/* Business Model */}
-      <section className="py-16 md:py-24 bg-[#1e3235]">
+      <section className="py-16 md:py-24 bg-[#5c090f]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Award className="w-12 h-12 text-[#eaae31] mx-auto mb-6" />
+          <Award className="w-12 h-12 text-[#febd14] mx-auto mb-6" />
           <h2 
             className="text-white text-2xl md:text-3xl font-bold mb-6"
             style={{ fontFamily: 'Kaisei Opti, serif' }}
@@ -267,7 +267,7 @@ const AboutView: React.FC<AboutViewProps> = ({ onNavigate }) => {
             {team.map((member, index) => (
               <div 
                 key={index}
-                className="p-6 bg-[#1e3235] rounded-xl border border-white/5"
+                className="p-6 bg-[#5c090f] rounded-xl border border-white/5"
               >
                 <h3 
                   className="text-white text-lg font-semibold mb-1"
@@ -276,7 +276,7 @@ const AboutView: React.FC<AboutViewProps> = ({ onNavigate }) => {
                   {member.name}
                 </h3>
                 <p 
-                  className="text-[#eaae31] text-sm mb-3"
+                  className="text-[#febd14] text-sm mb-3"
                   style={{ fontFamily: 'Kaisei Opti, serif' }}
                 >
                   {member.role}
@@ -294,7 +294,7 @@ const AboutView: React.FC<AboutViewProps> = ({ onNavigate }) => {
       </section>
 
       {/* CTA */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-[#2a4347] to-[#1e3235]">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-[#5c090f] to-[#5c090f]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 
             className="text-white text-2xl md:text-3xl font-bold mb-6"
@@ -311,7 +311,7 @@ const AboutView: React.FC<AboutViewProps> = ({ onNavigate }) => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <button
               onClick={() => onNavigate('listings')}
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#eaae31] text-[#2a4347] font-semibold rounded-lg hover:bg-[#eaae31]/90 transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#febd14] text-[#5c090f] font-semibold rounded-lg hover:bg-[#febd14]/90 transition-colors"
               style={{ fontFamily: 'Kaisei Opti, serif' }}
             >
               <span>View Listings</span>

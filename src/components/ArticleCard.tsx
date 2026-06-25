@@ -51,7 +51,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
             className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center text-white hover:bg-white/20 transition-colors z-10"
           >
             {isSaved ? (
-              <BookmarkCheck className="w-5 h-5 text-[#eaae31]" />
+              <BookmarkCheck className="w-5 h-5 text-[#febd14]" />
             ) : (
               <Bookmark className="w-5 h-5" />
             )}
@@ -62,7 +62,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
           {/* Category */}
           {article.category && (
             <span 
-              className="inline-block px-3 py-1 rounded-full text-xs font-medium bg-[#eaae31] text-[#2a4347] uppercase tracking-wide mb-4"
+              className="inline-block px-3 py-1 rounded-full text-xs font-medium bg-[#febd14] text-[#5c090f] uppercase tracking-wide mb-4"
               style={{ fontFamily: 'Kaisei Opti, serif' }}
             >
               {article.category.name}
@@ -70,7 +70,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
           )}
 
           <h2 
-            className="text-white text-2xl md:text-3xl font-bold mb-3 group-hover:text-[#eaae31] transition-colors line-clamp-2"
+            className="text-white text-2xl md:text-3xl font-bold mb-3 group-hover:text-[#febd14] transition-colors line-clamp-2"
             style={{ fontFamily: 'Kaisei Opti, serif' }}
           >
             {article.title}
@@ -90,7 +90,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
               <span style={{ fontFamily: 'Kaisei Opti, serif' }}>{article.read_time} min read</span>
             </div>
             {article.audio_url && (
-              <div className="flex items-center gap-1 text-[#eaae31]">
+              <div className="flex items-center gap-1 text-[#febd14]">
                 <Headphones className="w-4 h-4" />
                 <span style={{ fontFamily: 'Kaisei Opti, serif' }}>Audio</span>
               </div>
@@ -116,7 +116,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
         </div>
         <div className="flex-1 min-w-0">
           <h4 
-            className="text-white text-sm font-medium line-clamp-2 group-hover:text-[#eaae31] transition-colors mb-1"
+            className="text-white text-sm font-medium line-clamp-2 group-hover:text-[#febd14] transition-colors mb-1"
             style={{ fontFamily: 'Kaisei Opti, serif' }}
           >
             {article.title}
@@ -132,7 +132,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
 
   // Default variant
   return (
-    <div className="group bg-[#1e3235] rounded-xl overflow-hidden border border-white/5 hover:border-[#eaae31]/30 transition-all duration-300">
+    <div className="group bg-[#5c090f] rounded-xl overflow-hidden border border-white/5 hover:border-[#febd14]/30 transition-all duration-300">
       {/* Image */}
       <div className="relative aspect-[16/10] overflow-hidden">
         <img
@@ -147,7 +147,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
         {article.category && (
           <div className="absolute top-4 left-4">
             <span 
-              className="px-3 py-1 rounded-full text-xs font-medium bg-[#eaae31]/90 text-[#2a4347] uppercase tracking-wide"
+              className="px-3 py-1 rounded-full text-xs font-medium bg-[#febd14]/90 text-[#5c090f] uppercase tracking-wide"
               style={{ fontFamily: 'Kaisei Opti, serif' }}
             >
               {article.category.name}
@@ -165,7 +165,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
             className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center text-white hover:bg-white/20 transition-colors"
           >
             {isSaved ? (
-              <BookmarkCheck className="w-5 h-5 text-[#eaae31]" />
+              <BookmarkCheck className="w-5 h-5 text-[#febd14]" />
             ) : (
               <Bookmark className="w-5 h-5" />
             )}
@@ -175,7 +175,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
         {/* Audio Badge */}
         {article.audio_url && (
           <div className="absolute bottom-4 right-4">
-            <span className="flex items-center gap-1 px-2 py-1 rounded-full bg-white/10 backdrop-blur-sm text-[#eaae31] text-xs">
+            <span className="flex items-center gap-1 px-2 py-1 rounded-full bg-white/10 backdrop-blur-sm text-[#febd14] text-xs">
               <Headphones className="w-3 h-3" />
               <span style={{ fontFamily: 'Kaisei Opti, serif' }}>Audio</span>
             </span>
@@ -195,7 +195,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
         </div>
 
         <h3 
-          className="text-white text-lg font-semibold mb-2 line-clamp-2 group-hover:text-[#eaae31] transition-colors cursor-pointer"
+          className="text-white text-lg font-semibold mb-2 line-clamp-2 group-hover:text-[#febd14] transition-colors cursor-pointer"
           style={{ fontFamily: 'Kaisei Opti, serif' }}
           onClick={() => onReadMore(article)}
         >
@@ -211,7 +211,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
 
         <button
           onClick={() => onReadMore(article)}
-          className="flex items-center gap-2 text-[#eaae31] text-sm font-medium hover:gap-3 transition-all"
+          className="flex items-center gap-2 text-[#febd14] text-sm font-medium hover:gap-3 transition-all"
           style={{ fontFamily: 'Kaisei Opti, serif' }}
         >
           <span>Read More</span>

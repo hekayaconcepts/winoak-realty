@@ -72,8 +72,8 @@ const ContactView: React.FC = () => {
               <div className="space-y-8">
                 {/* Email */}
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-[#eaae31]/10 flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-6 h-6 text-[#eaae31]" />
+                  <div className="w-12 h-12 rounded-lg bg-[#febd14]/10 flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-6 h-6 text-[#febd14]" />
                   </div>
                   <div>
                     <h3 
@@ -86,15 +86,15 @@ const ContactView: React.FC = () => {
                       className="text-white/60 text-sm"
                       style={{ fontFamily: 'Kaisei Opti, serif' }}
                     >
-                      hello@africanpropertybrief.com
+                      HELLENAWINI@GMAIL.COM
                     </p>
                   </div>
                 </div>
 
                 {/* Location */}
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-[#eaae31]/10 flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-[#eaae31]" />
+                  <div className="w-12 h-12 rounded-lg bg-[#febd14]/10 flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-6 h-6 text-[#febd14]" />
                   </div>
                   <div>
                     <h3 
@@ -114,8 +114,8 @@ const ContactView: React.FC = () => {
 
                 {/* Response Time */}
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-[#eaae31]/10 flex items-center justify-center flex-shrink-0">
-                    <MessageSquare className="w-6 h-6 text-[#eaae31]" />
+                  <div className="w-12 h-12 rounded-lg bg-[#febd14]/10 flex items-center justify-center flex-shrink-0">
+                    <MessageSquare className="w-6 h-6 text-[#febd14]" />
                   </div>
                   <div>
                     <h3 
@@ -135,7 +135,7 @@ const ContactView: React.FC = () => {
               </div>
 
               {/* Quick Links */}
-              <div className="mt-12 p-6 bg-[#1e3235] rounded-xl border border-white/5">
+              <div className="mt-12 p-6 bg-[#5c090f] rounded-xl border border-white/5">
                 <h3 
                   className="text-white font-semibold mb-4"
                   style={{ fontFamily: 'Kaisei Opti, serif' }}
@@ -145,7 +145,7 @@ const ContactView: React.FC = () => {
                 <div className="space-y-3">
                   <a 
                     href="#" 
-                    className="flex items-center gap-3 text-white/60 hover:text-[#eaae31] transition-colors text-sm"
+                    className="flex items-center gap-3 text-white/60 hover:text-[#febd14] transition-colors text-sm"
                     style={{ fontFamily: 'Kaisei Opti, serif' }}
                   >
                     <Building2 className="w-4 h-4" />
@@ -153,7 +153,7 @@ const ContactView: React.FC = () => {
                   </a>
                   <a 
                     href="#" 
-                    className="flex items-center gap-3 text-white/60 hover:text-[#eaae31] transition-colors text-sm"
+                    className="flex items-center gap-3 text-white/60 hover:text-[#febd14] transition-colors text-sm"
                     style={{ fontFamily: 'Kaisei Opti, serif' }}
                   >
                     <Users className="w-4 h-4" />
@@ -165,7 +165,7 @@ const ContactView: React.FC = () => {
 
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <div className="bg-[#1e3235] rounded-xl p-6 md:p-8 border border-white/5">
+              <div className="bg-[#5c090f] rounded-xl p-6 md:p-8 border border-white/5">
                 <h2 
                   className="text-white text-xl font-semibold mb-6"
                   style={{ fontFamily: 'Kaisei Opti, serif' }}
@@ -220,7 +220,7 @@ const ContactView: React.FC = () => {
                           value={formData.name}
                           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                           placeholder="Your name"
-                          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#eaae31] transition-colors"
+                          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#febd14] transition-colors"
                           style={{ fontFamily: 'Kaisei Opti, serif' }}
                           required
                         />
@@ -239,7 +239,7 @@ const ContactView: React.FC = () => {
                           value={formData.email}
                           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                           placeholder="your@email.com"
-                          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#eaae31] transition-colors"
+                          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#febd14] transition-colors"
                           style={{ fontFamily: 'Kaisei Opti, serif' }}
                           required
                         />
@@ -258,7 +258,7 @@ const ContactView: React.FC = () => {
                         <select
                           value={formData.inquiryType}
                           onChange={(e) => setFormData({ ...formData, inquiryType: e.target.value })}
-                          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white text-sm focus:outline-none focus:border-[#eaae31] transition-colors appearance-none cursor-pointer"
+                          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white text-sm focus:outline-none focus:border-[#febd14] transition-colors appearance-none cursor-pointer"
                           style={{ fontFamily: 'Kaisei Opti, serif' }}
                         >
                           {inquiryTypes.map((type) => (
@@ -282,7 +282,7 @@ const ContactView: React.FC = () => {
                           value={formData.subject}
                           onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                           placeholder="What's this about?"
-                          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#eaae31] transition-colors"
+                          className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#febd14] transition-colors"
                           style={{ fontFamily: 'Kaisei Opti, serif' }}
                           required
                         />
@@ -302,7 +302,7 @@ const ContactView: React.FC = () => {
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                         placeholder="Tell us more about your inquiry..."
                         rows={6}
-                        className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#eaae31] transition-colors resize-none"
+                        className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#febd14] transition-colors resize-none"
                         style={{ fontFamily: 'Kaisei Opti, serif' }}
                         required
                       />
@@ -312,7 +312,7 @@ const ContactView: React.FC = () => {
                     <button
                       type="submit"
                       disabled={status === 'loading'}
-                      className="w-full md:w-auto flex items-center justify-center gap-2 px-8 py-4 bg-[#eaae31] text-[#2a4347] font-semibold rounded-lg hover:bg-[#eaae31]/90 transition-colors disabled:opacity-50"
+                      className="w-full md:w-auto flex items-center justify-center gap-2 px-8 py-4 bg-[#febd14] text-[#5c090f] font-semibold rounded-lg hover:bg-[#febd14]/90 transition-colors disabled:opacity-50"
                       style={{ fontFamily: 'Kaisei Opti, serif' }}
                     >
                       {status === 'loading' ? (

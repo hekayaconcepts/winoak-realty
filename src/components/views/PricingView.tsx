@@ -115,7 +115,7 @@ const PricingView: React.FC<PricingViewProps> = ({
       {/* Header */}
       <section className="py-16 md:py-24 text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#eaae31]/10 text-[#eaae31] text-sm mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#febd14]/10 text-[#febd14] text-sm mb-6">
             <Crown className="w-4 h-4" />
             <span style={{ fontFamily: 'Kaisei Opti, serif' }}>Premium Membership</span>
           </div>
@@ -155,14 +155,14 @@ const PricingView: React.FC<PricingViewProps> = ({
                 key={plan.id}
                 className={`relative p-6 md:p-8 rounded-2xl border transition-all ${
                   plan.popular 
-                    ? 'bg-gradient-to-b from-[#eaae31]/10 to-[#1e3235] border-[#eaae31]/50 scale-105' 
-                    : 'bg-[#1e3235] border-white/10 hover:border-white/20'
+                    ? 'bg-gradient-to-b from-[#febd14]/10 to-[#5c090f] border-[#febd14]/50 scale-105' 
+                    : 'bg-[#5c090f] border-white/10 hover:border-white/20'
                 }`}
               >
                 {plan.popular && (
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                     <span 
-                      className="px-4 py-1 rounded-full bg-[#eaae31] text-[#2a4347] text-sm font-semibold"
+                      className="px-4 py-1 rounded-full bg-[#febd14] text-[#5c090f] text-sm font-semibold"
                       style={{ fontFamily: 'Kaisei Opti, serif' }}
                     >
                       Most Popular
@@ -207,7 +207,7 @@ const PricingView: React.FC<PricingViewProps> = ({
                 <ul className="space-y-3 mb-8">
                   {plan.features.map((feature, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <Check className="w-5 h-5 text-[#eaae31] flex-shrink-0 mt-0.5" />
+                      <Check className="w-5 h-5 text-[#febd14] flex-shrink-0 mt-0.5" />
                       <span 
                         className="text-white/80 text-sm"
                         style={{ fontFamily: 'Kaisei Opti, serif' }}
@@ -223,7 +223,7 @@ const PricingView: React.FC<PricingViewProps> = ({
                   disabled={loading === plan.id || plan.id === 'free'}
                   className={`w-full py-4 rounded-lg font-semibold transition-all flex items-center justify-center gap-2 ${
                     plan.popular
-                      ? 'bg-[#eaae31] text-[#2a4347] hover:bg-[#eaae31]/90'
+                      ? 'bg-[#febd14] text-[#5c090f] hover:bg-[#febd14]/90'
                       : plan.id === 'free'
                       ? 'bg-white/5 text-white/40 cursor-default'
                       : 'bg-white/10 text-white hover:bg-white/20'
@@ -246,7 +246,7 @@ const PricingView: React.FC<PricingViewProps> = ({
       </section>
 
       {/* Features Grid */}
-      <section className="py-16 md:py-24 bg-[#1e3235]">
+      <section className="py-16 md:py-24 bg-[#5c090f]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 
             className="text-white text-2xl md:text-3xl font-bold text-center mb-12"
@@ -262,9 +262,9 @@ const PricingView: React.FC<PricingViewProps> = ({
               { icon: Clock, title: 'Priority Support', desc: 'Direct access to our research team within 24 hours' },
               { icon: Users, title: 'Consultations', desc: 'Book 1-on-1 calls with investment advisors' },
             ].map((feature, index) => (
-              <div key={index} className="p-6 bg-[#2a4347] rounded-xl">
-                <div className="w-12 h-12 rounded-lg bg-[#eaae31]/10 flex items-center justify-center mb-4">
-                  <feature.icon className="w-6 h-6 text-[#eaae31]" />
+              <div key={index} className="p-6 bg-[#5c090f] rounded-xl">
+                <div className="w-12 h-12 rounded-lg bg-[#febd14]/10 flex items-center justify-center mb-4">
+                  <feature.icon className="w-6 h-6 text-[#febd14]" />
                 </div>
                 <h3 
                   className="text-white font-semibold mb-2"
@@ -301,7 +301,7 @@ const PricingView: React.FC<PricingViewProps> = ({
               { q: 'Is there a free trial?', a: 'We offer a 7-day money-back guarantee on all premium plans. If you\'re not satisfied, contact us for a full refund.' },
               { q: 'Can I upgrade or downgrade my plan?', a: 'Yes, you can change your plan at any time. Changes take effect at the start of your next billing cycle.' },
             ].map((faq, index) => (
-              <div key={index} className="p-6 bg-[#1e3235] rounded-xl border border-white/5">
+              <div key={index} className="p-6 bg-[#5c090f] rounded-xl border border-white/5">
                 <h3 
                   className="text-white font-semibold mb-2"
                   style={{ fontFamily: 'Kaisei Opti, serif' }}

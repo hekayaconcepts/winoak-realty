@@ -31,7 +31,7 @@ const PodcastCard: React.FC<PodcastCardProps> = ({
 
   if (variant === 'featured') {
     return (
-      <div className="group bg-gradient-to-br from-[#2a4347] to-[#1e3235] rounded-xl overflow-hidden border border-white/5 hover:border-[#eaae31]/30 transition-all duration-300">
+      <div className="group bg-gradient-to-br from-[#5c090f] to-[#5c090f] rounded-xl overflow-hidden border border-white/5 hover:border-[#febd14]/30 transition-all duration-300">
         <div className="grid md:grid-cols-2 gap-6">
           {/* Image */}
           <div className="relative aspect-square md:aspect-auto overflow-hidden">
@@ -47,11 +47,11 @@ const PodcastCard: React.FC<PodcastCardProps> = ({
               onClick={() => onPlay?.(podcast)}
               className="absolute inset-0 flex items-center justify-center bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity"
             >
-              <div className="w-20 h-20 rounded-full bg-[#eaae31] flex items-center justify-center shadow-xl">
+              <div className="w-20 h-20 rounded-full bg-[#febd14] flex items-center justify-center shadow-xl">
                 {isPlaying ? (
-                  <Pause className="w-8 h-8 text-[#2a4347]" />
+                  <Pause className="w-8 h-8 text-[#5c090f]" />
                 ) : (
-                  <Play className="w-8 h-8 text-[#2a4347] ml-1" />
+                  <Play className="w-8 h-8 text-[#5c090f] ml-1" />
                 )}
               </div>
             </button>
@@ -59,13 +59,13 @@ const PodcastCard: React.FC<PodcastCardProps> = ({
 
           {/* Content */}
           <div className="p-6 md:py-8 md:pr-8 flex flex-col justify-center">
-            <div className="flex items-center gap-2 text-[#eaae31] text-sm mb-3">
+            <div className="flex items-center gap-2 text-[#febd14] text-sm mb-3">
               <Headphones className="w-4 h-4" />
               <span style={{ fontFamily: 'Kaisei Opti, serif' }}>Episode {podcast.episode_number}</span>
             </div>
 
             <h3 
-              className="text-white text-xl md:text-2xl font-bold mb-3 group-hover:text-[#eaae31] transition-colors"
+              className="text-white text-xl md:text-2xl font-bold mb-3 group-hover:text-[#febd14] transition-colors"
               style={{ fontFamily: 'Kaisei Opti, serif' }}
             >
               {podcast.title}
@@ -88,7 +88,7 @@ const PodcastCard: React.FC<PodcastCardProps> = ({
 
             <button
               onClick={() => onPlay?.(podcast)}
-              className="inline-flex items-center gap-3 px-6 py-3 bg-[#eaae31] text-[#2a4347] rounded-lg font-semibold hover:bg-[#eaae31]/90 transition-colors w-fit"
+              className="inline-flex items-center gap-3 px-6 py-3 bg-[#febd14] text-[#5c090f] rounded-lg font-semibold hover:bg-[#febd14]/90 transition-colors w-fit"
               style={{ fontFamily: 'Kaisei Opti, serif' }}
             >
               {isPlaying ? (
@@ -112,11 +112,11 @@ const PodcastCard: React.FC<PodcastCardProps> = ({
   if (variant === 'compact') {
     return (
       <div 
-        className="group flex items-center gap-4 p-4 bg-[#1e3235] rounded-xl border border-white/5 hover:border-[#eaae31]/30 transition-all cursor-pointer"
+        className="group flex items-center gap-4 p-4 bg-[#5c090f] rounded-xl border border-white/5 hover:border-[#febd14]/30 transition-all cursor-pointer"
         onClick={() => onPlay?.(podcast)}
       >
         <button
-          className="flex-shrink-0 w-12 h-12 rounded-full bg-[#eaae31]/10 flex items-center justify-center text-[#eaae31] group-hover:bg-[#eaae31] group-hover:text-[#2a4347] transition-all"
+          className="flex-shrink-0 w-12 h-12 rounded-full bg-[#febd14]/10 flex items-center justify-center text-[#febd14] group-hover:bg-[#febd14] group-hover:text-[#5c090f] transition-all"
         >
           {isPlaying ? (
             <Pause className="w-5 h-5" />
@@ -127,7 +127,7 @@ const PodcastCard: React.FC<PodcastCardProps> = ({
         
         <div className="flex-1 min-w-0">
           <h4 
-            className="text-white text-sm font-medium line-clamp-1 group-hover:text-[#eaae31] transition-colors"
+            className="text-white text-sm font-medium line-clamp-1 group-hover:text-[#febd14] transition-colors"
             style={{ fontFamily: 'Kaisei Opti, serif' }}
           >
             {podcast.title}
@@ -144,7 +144,7 @@ const PodcastCard: React.FC<PodcastCardProps> = ({
 
   // Default variant
   return (
-    <div className="group bg-[#1e3235] rounded-xl overflow-hidden border border-white/5 hover:border-[#eaae31]/30 transition-all duration-300">
+    <div className="group bg-[#5c090f] rounded-xl overflow-hidden border border-white/5 hover:border-[#febd14]/30 transition-all duration-300">
       {/* Image */}
       <div className="relative aspect-[16/10] overflow-hidden">
         <img
@@ -158,7 +158,7 @@ const PodcastCard: React.FC<PodcastCardProps> = ({
         {/* Episode Badge */}
         <div className="absolute top-4 left-4">
           <span 
-            className="px-3 py-1 rounded-full text-xs font-medium bg-[#eaae31]/90 text-[#2a4347] uppercase tracking-wide"
+            className="px-3 py-1 rounded-full text-xs font-medium bg-[#febd14]/90 text-[#5c090f] uppercase tracking-wide"
             style={{ fontFamily: 'Kaisei Opti, serif' }}
           >
             Episode {podcast.episode_number}
@@ -168,12 +168,12 @@ const PodcastCard: React.FC<PodcastCardProps> = ({
         {/* Play Button */}
         <button
           onClick={() => onPlay?.(podcast)}
-          className="absolute bottom-4 right-4 w-12 h-12 rounded-full bg-[#eaae31] flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+          className="absolute bottom-4 right-4 w-12 h-12 rounded-full bg-[#febd14] flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
         >
           {isPlaying ? (
-            <Pause className="w-5 h-5 text-[#2a4347]" />
+            <Pause className="w-5 h-5 text-[#5c090f]" />
           ) : (
-            <Play className="w-5 h-5 text-[#2a4347] ml-0.5" />
+            <Play className="w-5 h-5 text-[#5c090f] ml-0.5" />
           )}
         </button>
       </div>
@@ -181,7 +181,7 @@ const PodcastCard: React.FC<PodcastCardProps> = ({
       {/* Content */}
       <div className="p-5">
         <h3 
-          className="text-white text-lg font-semibold mb-2 line-clamp-2 group-hover:text-[#eaae31] transition-colors"
+          className="text-white text-lg font-semibold mb-2 line-clamp-2 group-hover:text-[#febd14] transition-colors"
           style={{ fontFamily: 'Kaisei Opti, serif' }}
         >
           {podcast.title}

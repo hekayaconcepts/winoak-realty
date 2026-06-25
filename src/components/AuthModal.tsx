@@ -145,7 +145,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onAuthSuccess })
       />
       
       {/* Modal */}
-      <div className="relative w-full max-w-md bg-[#2a4347] rounded-2xl shadow-2xl border border-white/10 overflow-hidden">
+      <div className="relative w-full max-w-md bg-[#5c090f] rounded-2xl shadow-2xl border border-white/10 overflow-hidden">
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -159,7 +159,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onAuthSuccess })
           <div className="flex justify-center mb-6">
             <img 
               src="https://d64gsuwffb70l.cloudfront.net/696a15fcf7f37ab46f03b95f_1768560149377_0263ab94.png" 
-              alt="The African Property Brief" 
+              alt="WinOak Realty" 
               className="h-12 w-auto"
             />
           </div>
@@ -217,7 +217,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onAuthSuccess })
                     value={fullName}
                     onChange={(e) => setFullName(e.target.value)}
                     placeholder="Enter your full name"
-                    className="w-full pl-12 pr-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#eaae31] transition-colors"
+                    className="w-full pl-12 pr-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#febd14] transition-colors"
                     style={{ fontFamily: 'Kaisei Opti, serif' }}
                     required
                   />
@@ -239,7 +239,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onAuthSuccess })
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email"
-                  className="w-full pl-12 pr-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#eaae31] transition-colors"
+                  className="w-full pl-12 pr-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#febd14] transition-colors"
                   style={{ fontFamily: 'Kaisei Opti, serif' }}
                   required
                 />
@@ -261,7 +261,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onAuthSuccess })
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     placeholder="Enter your password"
-                    className="w-full pl-12 pr-12 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#eaae31] transition-colors"
+                    className="w-full pl-12 pr-12 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#febd14] transition-colors"
                     style={{ fontFamily: 'Kaisei Opti, serif' }}
                     required
                     minLength={6}
@@ -286,7 +286,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onAuthSuccess })
                     setError('');
                     setMessage('');
                   }}
-                  className="text-[#eaae31] text-sm hover:underline"
+                  className="text-[#febd14] text-sm hover:underline"
                   style={{ fontFamily: 'Kaisei Opti, serif' }}
                 >
                   Forgot password?
@@ -297,7 +297,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onAuthSuccess })
             <button
               type="submit"
               disabled={loading}
-              className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-[#eaae31] text-[#2a4347] font-semibold rounded-lg hover:bg-[#eaae31]/90 transition-colors disabled:opacity-50"
+              className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-[#febd14] text-[#5c090f] font-semibold rounded-lg hover:bg-[#febd14]/90 transition-colors disabled:opacity-50"
               style={{ fontFamily: 'Kaisei Opti, serif' }}
             >
               {loading ? (
@@ -327,7 +327,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onAuthSuccess })
                     setError('');
                     setMessage('');
                   }}
-                  className="text-[#eaae31] hover:underline"
+                  className="text-[#febd14] hover:underline"
                 >
                   Sign up
                 </button>
@@ -345,7 +345,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onAuthSuccess })
                     setError('');
                     setMessage('');
                   }}
-                  className="text-[#eaae31] hover:underline"
+                  className="text-[#febd14] hover:underline"
                 >
                   Sign in
                 </button>

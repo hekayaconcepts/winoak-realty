@@ -49,7 +49,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
     { label: 'Saved Listings', value: savedPropertyIds.length, icon: Building2, color: 'text-blue-400', action: () => onNavigate('saved-listings') },
     { label: 'Saved Articles', value: savedArticleIds.length, icon: BookOpen, color: 'text-green-400', action: () => onNavigate('saved-articles') },
     { label: 'Podcast Episodes', value: podcasts.length, icon: Headphones, color: 'text-purple-400', action: () => onNavigate('audio-library') },
-    { label: 'Market Areas', value: '27+', icon: BarChart3, color: 'text-[#eaae31]', action: () => onNavigate('market-yields') },
+    { label: 'Market Areas', value: '27+', icon: BarChart3, color: 'text-[#febd14]', action: () => onNavigate('market-yields') },
   ];
 
   return (
@@ -77,7 +77,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                 onClick={() => setActiveTab('overview')}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                   activeTab === 'overview' 
-                    ? 'bg-[#eaae31] text-[#2a4347]' 
+                    ? 'bg-[#febd14] text-[#5c090f]' 
                     : 'bg-white/5 text-white/60 hover:text-white border border-white/10'
                 }`}
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
@@ -88,7 +88,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                 onClick={() => setActiveTab('notifications')}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors flex items-center gap-2 ${
                   activeTab === 'notifications' 
-                    ? 'bg-[#eaae31] text-[#2a4347]' 
+                    ? 'bg-[#febd14] text-[#5c090f]' 
                     : 'bg-white/5 text-white/60 hover:text-white border border-white/10'
                 }`}
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
@@ -117,7 +117,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                   <div 
                     key={index}
                     onClick={stat.action}
-                    className="p-5 md:p-6 bg-[#1e3235] rounded-xl border border-white/5 cursor-pointer hover:border-[#eaae31]/30 transition-all group"
+                    className="p-5 md:p-6 bg-[#5c090f] rounded-xl border border-white/5 cursor-pointer hover:border-[#febd14]/30 transition-all group"
                   >
                     <div className="flex items-center gap-3 md:gap-4">
                       <div className={`w-10 h-10 md:w-12 md:h-12 rounded-lg bg-white/5 flex items-center justify-center ${stat.color} group-hover:bg-white/10 transition-colors`}>
@@ -150,9 +150,9 @@ const DashboardView: React.FC<DashboardViewProps> = ({
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                 <button
                   onClick={() => onNavigate('market-yields')}
-                  className="p-4 bg-[#eaae31]/10 border border-[#eaae31]/20 rounded-xl hover:bg-[#eaae31]/15 transition-colors text-left group"
+                  className="p-4 bg-[#febd14]/10 border border-[#febd14]/20 rounded-xl hover:bg-[#febd14]/15 transition-colors text-left group"
                 >
-                  <BarChart3 className="w-5 h-5 text-[#eaae31] mb-2" />
+                  <BarChart3 className="w-5 h-5 text-[#febd14] mb-2" />
                   <p className="text-white text-sm font-medium" style={{ fontFamily: 'Kaisei Opti, serif' }}>Market Yields</p>
                   <p className="text-white/40 text-xs mt-0.5" style={{ fontFamily: 'Kaisei Opti, serif' }}>Live dashboard</p>
                 </button>
@@ -197,7 +197,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                 {savedProperties.length > 0 && (
                   <button
                     onClick={() => onNavigate('saved-listings')}
-                    className="flex items-center gap-2 text-[#eaae31] text-sm hover:gap-3 transition-all"
+                    className="flex items-center gap-2 text-[#febd14] text-sm hover:gap-3 transition-all"
                     style={{ fontFamily: 'Kaisei Opti, serif' }}
                   >
                     <span>View All</span>
@@ -220,7 +220,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                   ))}
                 </div>
               ) : (
-                <div className="p-8 bg-[#1e3235] rounded-xl border border-white/5 text-center">
+                <div className="p-8 bg-[#5c090f] rounded-xl border border-white/5 text-center">
                   <Bookmark className="w-12 h-12 text-white/20 mx-auto mb-4" />
                   <h3 
                     className="text-white font-semibold mb-2"
@@ -236,7 +236,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                   </p>
                   <button
                     onClick={() => onNavigate('listings')}
-                    className="px-6 py-3 bg-[#eaae31] text-[#2a4347] font-semibold rounded-lg hover:bg-[#eaae31]/90 transition-colors"
+                    className="px-6 py-3 bg-[#febd14] text-[#5c090f] font-semibold rounded-lg hover:bg-[#febd14]/90 transition-colors"
                     style={{ fontFamily: 'Kaisei Opti, serif' }}
                   >
                     Browse Listings
@@ -259,7 +259,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                 {savedArticles.length > 0 && (
                   <button
                     onClick={() => onNavigate('saved-articles')}
-                    className="flex items-center gap-2 text-[#eaae31] text-sm hover:gap-3 transition-all"
+                    className="flex items-center gap-2 text-[#febd14] text-sm hover:gap-3 transition-all"
                     style={{ fontFamily: 'Kaisei Opti, serif' }}
                   >
                     <span>View All</span>
@@ -282,7 +282,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                   ))}
                 </div>
               ) : (
-                <div className="p-8 bg-[#1e3235] rounded-xl border border-white/5 text-center">
+                <div className="p-8 bg-[#5c090f] rounded-xl border border-white/5 text-center">
                   <BookOpen className="w-12 h-12 text-white/20 mx-auto mb-4" />
                   <h3 
                     className="text-white font-semibold mb-2"
@@ -298,7 +298,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                   </p>
                   <button
                     onClick={() => onNavigate('blog')}
-                    className="px-6 py-3 bg-[#eaae31] text-[#2a4347] font-semibold rounded-lg hover:bg-[#eaae31]/90 transition-colors"
+                    className="px-6 py-3 bg-[#febd14] text-[#5c090f] font-semibold rounded-lg hover:bg-[#febd14]/90 transition-colors"
                     style={{ fontFamily: 'Kaisei Opti, serif' }}
                   >
                     Browse Articles
@@ -315,12 +315,12 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                 className="text-white text-xl font-semibold mb-6"
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
               >
-                Latest on The African Property Brief
+                Latest on WinOak Realty
               </h2>
 
               <div className="grid lg:grid-cols-2 gap-6">
                 {/* Recent Listings */}
-                <div className="p-6 bg-[#1e3235] rounded-xl border border-white/5">
+                <div className="p-6 bg-[#5c090f] rounded-xl border border-white/5">
                   <div className="flex items-center justify-between mb-4">
                     <h3 
                       className="text-white font-semibold"
@@ -330,7 +330,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                     </h3>
                     <button
                       onClick={() => onNavigate('listings')}
-                      className="text-[#eaae31] text-sm"
+                      className="text-[#febd14] text-sm"
                       style={{ fontFamily: 'Kaisei Opti, serif' }}
                     >
                       View All
@@ -361,7 +361,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                           </div>
                         </div>
                         <span 
-                          className="text-[#eaae31] text-sm font-semibold"
+                          className="text-[#febd14] text-sm font-semibold"
                           style={{ fontFamily: 'Kaisei Opti, serif' }}
                         >
                           {property.price >= 1000000 
@@ -375,7 +375,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                 </div>
 
                 {/* Recent Articles */}
-                <div className="p-6 bg-[#1e3235] rounded-xl border border-white/5">
+                <div className="p-6 bg-[#5c090f] rounded-xl border border-white/5">
                   <div className="flex items-center justify-between mb-4">
                     <h3 
                       className="text-white font-semibold"
@@ -385,7 +385,7 @@ const DashboardView: React.FC<DashboardViewProps> = ({
                     </h3>
                     <button
                       onClick={() => onNavigate('blog')}
-                      className="text-[#eaae31] text-sm"
+                      className="text-[#febd14] text-sm"
                       style={{ fontFamily: 'Kaisei Opti, serif' }}
                     >
                       View All

@@ -29,17 +29,16 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
     }
   };
 
-  const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#1e3235] border-t border-white/10">
+    <footer className="bg-[#5c090f] border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <img 
               src="https://d64gsuwffb70l.cloudfront.net/696a15fcf7f37ab46f03b95f_1768560149377_0263ab94.png" 
-              alt="The African Property Brief" 
+              alt="WinOak Realty" 
               className="h-12 w-auto mb-4"
             />
             <p 
@@ -53,7 +52,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 href="https://twitter.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:text-[#eaae31] hover:bg-white/10 transition-all"
+                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:text-[#febd14] hover:bg-white/10 transition-all"
               >
                 <Twitter className="w-5 h-5" />
               </a>
@@ -61,7 +60,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 href="https://linkedin.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:text-[#eaae31] hover:bg-white/10 transition-all"
+                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:text-[#febd14] hover:bg-white/10 transition-all"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
@@ -71,7 +70,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           {/* Quick Links */}
           <div>
             <h4 
-              className="text-[#eaae31] text-sm font-semibold uppercase tracking-wider mb-4"
+              className="text-[#febd14] text-sm font-semibold uppercase tracking-wider mb-4"
               style={{ fontFamily: 'Kaisei Opti, serif' }}
             >
               Quick Links
@@ -103,7 +102,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           {/* Categories */}
           <div>
             <h4 
-              className="text-[#eaae31] text-sm font-semibold uppercase tracking-wider mb-4"
+              className="text-[#febd14] text-sm font-semibold uppercase tracking-wider mb-4"
               style={{ fontFamily: 'Kaisei Opti, serif' }}
             >
               Categories
@@ -131,7 +130,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           {/* Newsletter */}
           <div>
             <h4 
-              className="text-[#eaae31] text-sm font-semibold uppercase tracking-wider mb-4"
+              className="text-[#febd14] text-sm font-semibold uppercase tracking-wider mb-4"
               style={{ fontFamily: 'Kaisei Opti, serif' }}
             >
               Newsletter
@@ -148,13 +147,13 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
-                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#eaae31] transition-colors"
+                className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#febd14] transition-colors"
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
               />
               <button
                 type="submit"
                 disabled={subscribeStatus === 'loading'}
-                className="w-full px-4 py-3 bg-[#eaae31] text-[#2a4347] text-sm font-semibold rounded-lg hover:bg-[#eaae31]/90 transition-colors disabled:opacity-50"
+                className="w-full px-4 py-3 bg-[#febd14] text-[#5c090f] text-sm font-semibold rounded-lg hover:bg-[#febd14]/90 transition-colors disabled:opacity-50"
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
               >
                 {subscribeStatus === 'loading' ? 'Subscribing...' : 'Subscribe'}
@@ -175,11 +174,11 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <div className="flex flex-wrap items-center gap-6 text-white/60 text-sm">
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
-                <span style={{ fontFamily: 'Kaisei Opti, serif' }}>Nairobi, Kenya</span>
+                <span style={{ fontFamily: 'Kaisei Opti, serif' }}>Nairobi, Kenya — Komarock Heights</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span style={{ fontFamily: 'Kaisei Opti, serif' }}>hello@africanpropertybrief.com</span>
+                <span style={{ fontFamily: 'Kaisei Opti, serif' }}>HELLENAWINI@GMAIL.COM</span>
               </div>
             </div>
           </div>
@@ -191,7 +190,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             className="text-white/40 text-sm"
             style={{ fontFamily: 'Kaisei Opti, serif' }}
           >
-            © {currentYear} The African Property Brief. All rights reserved.
+            © 2026 WinOak Realty Limited. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <button 

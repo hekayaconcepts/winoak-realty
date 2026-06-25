@@ -1,4 +1,4 @@
-// Type definitions for The African Property Brief
+// Type definitions for WinOak Realty
 
 export interface Property {
   id: string;

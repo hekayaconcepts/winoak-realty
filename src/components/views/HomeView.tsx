@@ -70,13 +70,13 @@ const HomeView: React.FC<HomeViewProps> = ({
             alt="Nairobi Skyline"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#2a4347]/95 via-[#2a4347]/80 to-[#2a4347]/60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#5c090f]/95 via-[#5c090f]/80 to-[#5c090f]/60" />
         </div>
 
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#eaae31]/10 text-[#eaae31] text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#febd14]/10 text-[#febd14] text-sm mb-6">
               <Building2 className="w-4 h-4" />
               <span style={{ fontFamily: 'Kaisei Opti, serif' }}>Investor-Grade Intelligence</span>
             </div>
@@ -86,7 +86,7 @@ const HomeView: React.FC<HomeViewProps> = ({
               style={{ fontFamily: 'Kaisei Opti, serif' }}
             >
               African Real Estate,{' '}
-              <span className="text-[#eaae31]">Decoded.</span>
+              <span className="text-[#febd14]">Decoded.</span>
             </h1>
 
             <p 
@@ -100,7 +100,7 @@ const HomeView: React.FC<HomeViewProps> = ({
             <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={() => onNavigate('listings')}
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#eaae31] text-[#2a4347] font-semibold rounded-lg hover:bg-[#eaae31]/90 transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#febd14] text-[#5c090f] font-semibold rounded-lg hover:bg-[#febd14]/90 transition-colors"
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
               >
                 <span>Explore Listings</span>
@@ -126,13 +126,13 @@ const HomeView: React.FC<HomeViewProps> = ({
       </section>
 
       {/* Stats Section */}
-      <section className="py-12 bg-[#1e3235] border-y border-white/5">
+      <section className="py-12 bg-[#5c090f] border-y border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
                 <p 
-                  className="text-[#eaae31] text-3xl md:text-4xl font-bold mb-1"
+                  className="text-[#febd14] text-3xl md:text-4xl font-bold mb-1"
                   style={{ fontFamily: 'Kaisei Opti, serif' }}
                 >
                   {stat.value}
@@ -157,7 +157,7 @@ const HomeView: React.FC<HomeViewProps> = ({
               className="text-white text-3xl md:text-4xl font-bold mb-4"
               style={{ fontFamily: 'Kaisei Opti, serif' }}
             >
-              Why The African Property Brief?
+              Why WinOak Realty?
             </h2>
             <p 
               className="text-white/60 text-lg max-w-2xl mx-auto"
@@ -171,10 +171,10 @@ const HomeView: React.FC<HomeViewProps> = ({
             {features.map((feature, index) => (
               <div 
                 key={index}
-                className="p-6 bg-[#1e3235] rounded-xl border border-white/5 hover:border-[#eaae31]/30 transition-all group"
+                className="p-6 bg-[#5c090f] rounded-xl border border-white/5 hover:border-[#febd14]/30 transition-all group"
               >
-                <div className="w-12 h-12 rounded-lg bg-[#eaae31]/10 flex items-center justify-center mb-4 group-hover:bg-[#eaae31]/20 transition-colors">
-                  <feature.icon className="w-6 h-6 text-[#eaae31]" />
+                <div className="w-12 h-12 rounded-lg bg-[#febd14]/10 flex items-center justify-center mb-4 group-hover:bg-[#febd14]/20 transition-colors">
+                  <feature.icon className="w-6 h-6 text-[#febd14]" />
                 </div>
                 <h3 
                   className="text-white text-lg font-semibold mb-2"
@@ -196,7 +196,7 @@ const HomeView: React.FC<HomeViewProps> = ({
 
       {/* Featured Properties */}
       {featuredProperties.length > 0 && (
-        <section className="py-20 md:py-28 bg-[#1e3235]">
+        <section className="py-20 md:py-28 bg-[#5c090f]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
               <div>
@@ -215,7 +215,7 @@ const HomeView: React.FC<HomeViewProps> = ({
               </div>
               <button
                 onClick={() => onNavigate('listings')}
-                className="inline-flex items-center gap-2 text-[#eaae31] font-medium hover:gap-3 transition-all"
+                className="inline-flex items-center gap-2 text-[#febd14] font-medium hover:gap-3 transition-all"
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
               >
                 <span>View All Listings</span>
@@ -258,7 +258,7 @@ const HomeView: React.FC<HomeViewProps> = ({
               </div>
               <button
                 onClick={() => onNavigate('blog')}
-                className="inline-flex items-center gap-2 text-[#eaae31] font-medium hover:gap-3 transition-all"
+                className="inline-flex items-center gap-2 text-[#febd14] font-medium hover:gap-3 transition-all"
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
               >
                 <span>View All Articles</span>
@@ -296,7 +296,7 @@ const HomeView: React.FC<HomeViewProps> = ({
 
       {/* Latest Podcast */}
       {latestPodcast && (
-        <section className="py-20 md:py-28 bg-[#1e3235]">
+        <section className="py-20 md:py-28 bg-[#5c090f]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
               <div>
@@ -315,7 +315,7 @@ const HomeView: React.FC<HomeViewProps> = ({
               </div>
               <button
                 onClick={() => onNavigate('podcast')}
-                className="inline-flex items-center gap-2 text-[#eaae31] font-medium hover:gap-3 transition-all"
+                className="inline-flex items-center gap-2 text-[#febd14] font-medium hover:gap-3 transition-all"
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
               >
                 <span>All Episodes</span>
@@ -338,7 +338,7 @@ const HomeView: React.FC<HomeViewProps> = ({
       {/* Trust Section */}
       <section className="py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Users className="w-12 h-12 text-[#eaae31] mx-auto mb-6" />
+          <Users className="w-12 h-12 text-[#febd14] mx-auto mb-6" />
           <h2 
             className="text-white text-3xl md:text-4xl font-bold mb-4"
             style={{ fontFamily: 'Kaisei Opti, serif' }}
@@ -349,7 +349,7 @@ const HomeView: React.FC<HomeViewProps> = ({
             className="text-white/70 text-lg leading-relaxed mb-8"
             style={{ fontFamily: 'Kaisei Opti, serif', lineHeight: 1.7 }}
           >
-            The African Property Brief serves international investors, diaspora buyers, global real estate agents, 
+            WinOak Realty serves international investors, diaspora buyers, global real estate agents, 
             and high-end property advisors. We earn through commissions when deals close, not listing fees. 
             This aligns our interests with yours.
           </p>

@@ -68,7 +68,7 @@ const BlogView: React.FC<BlogViewProps> = ({
       </section>
 
       {/* Filters */}
-      <section className="sticky top-16 md:top-20 z-30 bg-[#2a4347]/95 backdrop-blur-sm border-b border-white/5">
+      <section className="sticky top-16 md:top-20 z-30 bg-[#5c090f]/95 backdrop-blur-sm border-b border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex flex-col md:flex-row md:items-center gap-4">
             {/* Search */}
@@ -79,7 +79,7 @@ const BlogView: React.FC<BlogViewProps> = ({
                 value={filters.search || ''}
                 onChange={(e) => setFilters({ ...filters, search: e.target.value })}
                 placeholder="Search articles..."
-                className="w-full pl-12 pr-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#eaae31] transition-colors"
+                className="w-full pl-12 pr-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#febd14] transition-colors"
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
               />
             </div>
@@ -90,7 +90,7 @@ const BlogView: React.FC<BlogViewProps> = ({
                 onClick={() => setActiveCategory(null)}
                 className={`flex-shrink-0 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                   activeCategory === null
-                    ? 'bg-[#eaae31] text-[#2a4347]'
+                    ? 'bg-[#febd14] text-[#5c090f]'
                     : 'bg-white/5 text-white/70 hover:text-white hover:bg-white/10'
                 }`}
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
@@ -103,7 +103,7 @@ const BlogView: React.FC<BlogViewProps> = ({
                   onClick={() => setActiveCategory(category.id)}
                   className={`flex-shrink-0 px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                     activeCategory === category.id
-                      ? 'bg-[#eaae31] text-[#2a4347]'
+                      ? 'bg-[#febd14] text-[#5c090f]'
                       : 'bg-white/5 text-white/70 hover:text-white hover:bg-white/10'
                   }`}
                   style={{ fontFamily: 'Kaisei Opti, serif' }}
@@ -169,7 +169,7 @@ const BlogView: React.FC<BlogViewProps> = ({
                   setFilters({});
                   setActiveCategory(null);
                 }}
-                className="px-6 py-3 bg-[#eaae31] text-[#2a4347] font-semibold rounded-lg hover:bg-[#eaae31]/90 transition-colors"
+                className="px-6 py-3 bg-[#febd14] text-[#5c090f] font-semibold rounded-lg hover:bg-[#febd14]/90 transition-colors"
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
               >
                 Clear Filters

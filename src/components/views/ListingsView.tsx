@@ -108,7 +108,7 @@ const ListingsView: React.FC<ListingsViewProps> = ({
       </section>
 
       {/* Filters Bar */}
-      <section className="sticky top-16 md:top-20 z-30 bg-[#2a4347]/95 backdrop-blur-sm border-b border-white/5">
+      <section className="sticky top-16 md:top-20 z-30 bg-[#5c090f]/95 backdrop-blur-sm border-b border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex flex-col lg:flex-row lg:items-center gap-4">
             {/* Search */}
@@ -119,7 +119,7 @@ const ListingsView: React.FC<ListingsViewProps> = ({
                 value={filters.search || ''}
                 onChange={(e) => setFilters({ ...filters, search: e.target.value })}
                 placeholder="Search properties..."
-                className="w-full pl-12 pr-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#eaae31] transition-colors"
+                className="w-full pl-12 pr-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#febd14] transition-colors"
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
               />
             </div>
@@ -130,7 +130,7 @@ const ListingsView: React.FC<ListingsViewProps> = ({
               <select
                 value={filters.propertyType || ''}
                 onChange={(e) => setFilters({ ...filters, propertyType: e.target.value || undefined })}
-                className="px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white text-sm focus:outline-none focus:border-[#eaae31] transition-colors appearance-none cursor-pointer"
+                className="px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white text-sm focus:outline-none focus:border-[#febd14] transition-colors appearance-none cursor-pointer"
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
               >
                 <option value="">All Types</option>
@@ -143,7 +143,7 @@ const ListingsView: React.FC<ListingsViewProps> = ({
               <select
                 value={filters.city || ''}
                 onChange={(e) => setFilters({ ...filters, city: e.target.value || undefined })}
-                className="px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white text-sm focus:outline-none focus:border-[#eaae31] transition-colors appearance-none cursor-pointer"
+                className="px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white text-sm focus:outline-none focus:border-[#febd14] transition-colors appearance-none cursor-pointer"
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
               >
                 <option value="">All Cities</option>
@@ -156,7 +156,7 @@ const ListingsView: React.FC<ListingsViewProps> = ({
               <select
                 value={filters.status || ''}
                 onChange={(e) => setFilters({ ...filters, status: e.target.value || undefined })}
-                className="px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white text-sm focus:outline-none focus:border-[#eaae31] transition-colors appearance-none cursor-pointer capitalize"
+                className="px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white text-sm focus:outline-none focus:border-[#febd14] transition-colors appearance-none cursor-pointer capitalize"
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
               >
                 <option value="">All Statuses</option>
@@ -169,7 +169,7 @@ const ListingsView: React.FC<ListingsViewProps> = ({
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value as any)}
-                className="px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white text-sm focus:outline-none focus:border-[#eaae31] transition-colors appearance-none cursor-pointer"
+                className="px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white text-sm focus:outline-none focus:border-[#febd14] transition-colors appearance-none cursor-pointer"
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
               >
                 <option value="newest">Newest First</option>
@@ -181,7 +181,7 @@ const ListingsView: React.FC<ListingsViewProps> = ({
               {hasActiveFilters && (
                 <button
                   onClick={clearFilters}
-                  className="px-4 py-3 text-[#eaae31] text-sm hover:bg-white/5 rounded-lg transition-colors"
+                  className="px-4 py-3 text-[#febd14] text-sm hover:bg-white/5 rounded-lg transition-colors"
                   style={{ fontFamily: 'Kaisei Opti, serif' }}
                 >
                   Clear All
@@ -199,7 +199,7 @@ const ListingsView: React.FC<ListingsViewProps> = ({
                 <Filter className="w-4 h-4" />
                 <span>Filters</span>
                 {hasActiveFilters && (
-                  <span className="w-5 h-5 rounded-full bg-[#eaae31] text-[#2a4347] text-xs flex items-center justify-center">
+                  <span className="w-5 h-5 rounded-full bg-[#febd14] text-[#5c090f] text-xs flex items-center justify-center">
                     {Object.values(filters).filter(v => v !== undefined && v !== '').length}
                   </span>
                 )}
@@ -208,7 +208,7 @@ const ListingsView: React.FC<ListingsViewProps> = ({
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value as any)}
-                className="flex-1 px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white text-sm focus:outline-none focus:border-[#eaae31] transition-colors appearance-none cursor-pointer"
+                className="flex-1 px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white text-sm focus:outline-none focus:border-[#febd14] transition-colors appearance-none cursor-pointer"
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
               >
                 <option value="newest">Newest</option>
@@ -220,12 +220,12 @@ const ListingsView: React.FC<ListingsViewProps> = ({
 
           {/* Mobile Filters Panel */}
           {showFilters && (
-            <div className="lg:hidden mt-4 p-4 bg-[#1e3235] rounded-lg border border-white/10">
+            <div className="lg:hidden mt-4 p-4 bg-[#5c090f] rounded-lg border border-white/10">
               <div className="grid grid-cols-2 gap-3">
                 <select
                   value={filters.propertyType || ''}
                   onChange={(e) => setFilters({ ...filters, propertyType: e.target.value || undefined })}
-                  className="px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white text-sm focus:outline-none focus:border-[#eaae31] transition-colors"
+                  className="px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white text-sm focus:outline-none focus:border-[#febd14] transition-colors"
                   style={{ fontFamily: 'Kaisei Opti, serif' }}
                 >
                   <option value="">All Types</option>
@@ -237,7 +237,7 @@ const ListingsView: React.FC<ListingsViewProps> = ({
                 <select
                   value={filters.city || ''}
                   onChange={(e) => setFilters({ ...filters, city: e.target.value || undefined })}
-                  className="px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white text-sm focus:outline-none focus:border-[#eaae31] transition-colors"
+                  className="px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white text-sm focus:outline-none focus:border-[#febd14] transition-colors"
                   style={{ fontFamily: 'Kaisei Opti, serif' }}
                 >
                   <option value="">All Cities</option>
@@ -249,7 +249,7 @@ const ListingsView: React.FC<ListingsViewProps> = ({
                 <select
                   value={filters.status || ''}
                   onChange={(e) => setFilters({ ...filters, status: e.target.value || undefined })}
-                  className="px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white text-sm focus:outline-none focus:border-[#eaae31] transition-colors capitalize"
+                  className="px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white text-sm focus:outline-none focus:border-[#febd14] transition-colors capitalize"
                   style={{ fontFamily: 'Kaisei Opti, serif' }}
                 >
                   <option value="">All Statuses</option>
@@ -261,7 +261,7 @@ const ListingsView: React.FC<ListingsViewProps> = ({
                 {hasActiveFilters && (
                   <button
                     onClick={clearFilters}
-                    className="px-4 py-3 text-[#eaae31] text-sm bg-white/5 rounded-lg"
+                    className="px-4 py-3 text-[#febd14] text-sm bg-white/5 rounded-lg"
                     style={{ fontFamily: 'Kaisei Opti, serif' }}
                   >
                     Clear All
@@ -317,7 +317,7 @@ const ListingsView: React.FC<ListingsViewProps> = ({
               </p>
               <button
                 onClick={clearFilters}
-                className="px-6 py-3 bg-[#eaae31] text-[#2a4347] font-semibold rounded-lg hover:bg-[#eaae31]/90 transition-colors"
+                className="px-6 py-3 bg-[#febd14] text-[#5c090f] font-semibold rounded-lg hover:bg-[#febd14]/90 transition-colors"
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
               >
                 Clear Filters

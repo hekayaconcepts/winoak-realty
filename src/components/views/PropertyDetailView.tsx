@@ -117,7 +117,7 @@ const PropertyDetailView: React.FC<PropertyDetailViewProps> = ({
           {/* Left Column - Images & Details */}
           <div className="lg:col-span-2 space-y-8">
             {/* Image Gallery */}
-            <div className="relative aspect-[16/10] rounded-xl overflow-hidden bg-[#1e3235]">
+            <div className="relative aspect-[16/10] rounded-xl overflow-hidden bg-[#5c090f]">
               <img
                 src={images[currentImageIndex]}
                 alt={property.name}
@@ -173,7 +173,7 @@ const PropertyDetailView: React.FC<PropertyDetailViewProps> = ({
                     className="w-10 h-10 rounded-full bg-black/50 flex items-center justify-center text-white hover:bg-black/70 transition-colors"
                   >
                     {isSaved ? (
-                      <BookmarkCheck className="w-5 h-5 text-[#eaae31]" />
+                      <BookmarkCheck className="w-5 h-5 text-[#febd14]" />
                     ) : (
                       <Bookmark className="w-5 h-5" />
                     )}
@@ -191,14 +191,14 @@ const PropertyDetailView: React.FC<PropertyDetailViewProps> = ({
             <div>
               <div className="flex flex-wrap items-center gap-3 mb-4">
                 <span 
-                  className="px-3 py-1 rounded-full bg-[#eaae31]/10 text-[#eaae31] text-sm"
+                  className="px-3 py-1 rounded-full bg-[#febd14]/10 text-[#febd14] text-sm"
                   style={{ fontFamily: 'Kaisei Opti, serif' }}
                 >
                   {property.property_type}
                 </span>
                 {property.featured && (
                   <span 
-                    className="px-3 py-1 rounded-full bg-[#eaae31] text-[#2a4347] text-sm font-medium"
+                    className="px-3 py-1 rounded-full bg-[#febd14] text-[#5c090f] text-sm font-medium"
                     style={{ fontFamily: 'Kaisei Opti, serif' }}
                   >
                     Featured
@@ -219,7 +219,7 @@ const PropertyDetailView: React.FC<PropertyDetailViewProps> = ({
               </div>
 
               <p 
-                className="text-[#eaae31] text-3xl font-bold mb-8"
+                className="text-[#febd14] text-3xl font-bold mb-8"
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
               >
                 {formatPrice(property.price, property.price_currency)}
@@ -254,9 +254,9 @@ const PropertyDetailView: React.FC<PropertyDetailViewProps> = ({
                     {property.key_features.map((feature, index) => (
                       <div 
                         key={index}
-                        className="flex items-center gap-3 p-3 bg-[#1e3235] rounded-lg"
+                        className="flex items-center gap-3 p-3 bg-[#5c090f] rounded-lg"
                       >
-                        <Check className="w-5 h-5 text-[#eaae31] flex-shrink-0" />
+                        <Check className="w-5 h-5 text-[#febd14] flex-shrink-0" />
                         <span 
                           className="text-white/80 text-sm"
                           style={{ fontFamily: 'Kaisei Opti, serif' }}
@@ -274,7 +274,7 @@ const PropertyDetailView: React.FC<PropertyDetailViewProps> = ({
           {/* Right Column - Inquiry Form */}
           <div className="lg:col-span-1">
             <div className="sticky top-28">
-              <div className="bg-[#1e3235] rounded-xl p-6 border border-white/5">
+              <div className="bg-[#5c090f] rounded-xl p-6 border border-white/5">
                 <h3 
                   className="text-white text-lg font-semibold mb-4"
                   style={{ fontFamily: 'Kaisei Opti, serif' }}
@@ -305,34 +305,34 @@ const PropertyDetailView: React.FC<PropertyDetailViewProps> = ({
                     <input
                       type="text"
                       placeholder="Your Name"
-                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#eaae31] transition-colors"
+                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#febd14] transition-colors"
                       style={{ fontFamily: 'Kaisei Opti, serif' }}
                       required
                     />
                     <input
                       type="email"
                       placeholder="Your Email"
-                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#eaae31] transition-colors"
+                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#febd14] transition-colors"
                       style={{ fontFamily: 'Kaisei Opti, serif' }}
                       required
                     />
                     <input
                       type="tel"
                       placeholder="Phone Number"
-                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#eaae31] transition-colors"
+                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#febd14] transition-colors"
                       style={{ fontFamily: 'Kaisei Opti, serif' }}
                     />
                     <textarea
                       placeholder="Your Message"
                       rows={4}
-                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#eaae31] transition-colors resize-none"
+                      className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#febd14] transition-colors resize-none"
                       style={{ fontFamily: 'Kaisei Opti, serif' }}
                       defaultValue={`I'm interested in ${property.name}. Please send me more information.`}
                     />
                     <button
                       type="submit"
                       disabled={inquiryStatus === 'loading'}
-                      className="w-full px-6 py-4 bg-[#eaae31] text-[#2a4347] font-semibold rounded-lg hover:bg-[#eaae31]/90 transition-colors disabled:opacity-50"
+                      className="w-full px-6 py-4 bg-[#febd14] text-[#5c090f] font-semibold rounded-lg hover:bg-[#febd14]/90 transition-colors disabled:opacity-50"
                       style={{ fontFamily: 'Kaisei Opti, serif' }}
                     >
                       {inquiryStatus === 'loading' ? 'Sending...' : 'Send Inquiry'}
@@ -344,7 +344,7 @@ const PropertyDetailView: React.FC<PropertyDetailViewProps> = ({
                   <button
                     onClick={handleDownloadMemo}
                     disabled={memoStatus === 'loading'}
-                    className="flex items-center justify-center gap-2 w-full px-6 py-3 bg-[#eaae31] text-[#2a4347] font-semibold rounded-lg hover:bg-[#eaae31]/90 transition-colors disabled:opacity-60"
+                    className="flex items-center justify-center gap-2 w-full px-6 py-3 bg-[#febd14] text-[#5c090f] font-semibold rounded-lg hover:bg-[#febd14]/90 transition-colors disabled:opacity-60"
                     style={{ fontFamily: 'Kaisei Opti, serif' }}
                   >
                     {memoStatus === 'loading' ? (
@@ -383,12 +383,12 @@ const PropertyDetailView: React.FC<PropertyDetailViewProps> = ({
                 {/* Contact Info */}
                 <div className="mt-6 pt-6 border-t border-white/10 space-y-3">
                   <a
-                    href="mailto:hello@africanpropertybrief.com"
+                    href="mailto:HELLENAWINI@GMAIL.COM"
                     className="flex items-center gap-3 text-white/60 hover:text-white transition-colors text-sm"
                     style={{ fontFamily: 'Kaisei Opti, serif' }}
                   >
                     <Mail className="w-4 h-4" />
-                    <span>hello@africanpropertybrief.com</span>
+                    <span>HELLENAWINI@GMAIL.COM</span>
                   </a>
                 </div>
               </div>

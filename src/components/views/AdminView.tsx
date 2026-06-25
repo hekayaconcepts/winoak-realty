@@ -78,7 +78,7 @@ const AdminView: React.FC<AdminViewProps> = ({
   };
 
   return (
-    <div className="min-h-screen pt-20 md:pt-24 bg-[#1e3235]">
+    <div className="min-h-screen pt-20 md:pt-24 bg-[#5c090f]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8">
@@ -106,7 +106,7 @@ const AdminView: React.FC<AdminViewProps> = ({
               onClick={() => setActiveTab(tab.id)}
               className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors ${
                 activeTab === tab.id
-                  ? 'bg-[#eaae31] text-[#2a4347]'
+                  ? 'bg-[#febd14] text-[#5c090f]'
                   : 'text-white/60 hover:text-white hover:bg-white/5'
               }`}
               style={{ fontFamily: 'Kaisei Opti, serif' }}
@@ -125,7 +125,7 @@ const AdminView: React.FC<AdminViewProps> = ({
               {stats.map((stat, index) => (
                 <div 
                   key={index}
-                  className="p-6 bg-[#2a4347] rounded-xl border border-white/5"
+                  className="p-6 bg-[#5c090f] rounded-xl border border-white/5"
                 >
                   <div className={`w-10 h-10 rounded-lg ${stat.color} flex items-center justify-center mb-4`}>
                     <stat.icon className="w-5 h-5" />
@@ -150,7 +150,7 @@ const AdminView: React.FC<AdminViewProps> = ({
             <div className="grid md:grid-cols-3 gap-4">
               <button
                 onClick={() => openCreateModal('property')}
-                className="p-6 bg-[#2a4347] rounded-xl border border-white/5 hover:border-[#eaae31]/30 transition-all text-left group"
+                className="p-6 bg-[#5c090f] rounded-xl border border-white/5 hover:border-[#febd14]/30 transition-all text-left group"
               >
                 <div className="w-12 h-12 rounded-lg bg-blue-500/10 flex items-center justify-center mb-4 group-hover:bg-blue-500/20 transition-colors">
                   <Plus className="w-6 h-6 text-blue-400" />
@@ -171,7 +171,7 @@ const AdminView: React.FC<AdminViewProps> = ({
 
               <button
                 onClick={() => openCreateModal('article')}
-                className="p-6 bg-[#2a4347] rounded-xl border border-white/5 hover:border-[#eaae31]/30 transition-all text-left group"
+                className="p-6 bg-[#5c090f] rounded-xl border border-white/5 hover:border-[#febd14]/30 transition-all text-left group"
               >
                 <div className="w-12 h-12 rounded-lg bg-green-500/10 flex items-center justify-center mb-4 group-hover:bg-green-500/20 transition-colors">
                   <Plus className="w-6 h-6 text-green-400" />
@@ -192,7 +192,7 @@ const AdminView: React.FC<AdminViewProps> = ({
 
               <button
                 onClick={() => openCreateModal('podcast')}
-                className="p-6 bg-[#2a4347] rounded-xl border border-white/5 hover:border-[#eaae31]/30 transition-all text-left group"
+                className="p-6 bg-[#5c090f] rounded-xl border border-white/5 hover:border-[#febd14]/30 transition-all text-left group"
               >
                 <div className="w-12 h-12 rounded-lg bg-purple-500/10 flex items-center justify-center mb-4 group-hover:bg-purple-500/20 transition-colors">
                   <Plus className="w-6 h-6 text-purple-400" />
@@ -215,7 +215,7 @@ const AdminView: React.FC<AdminViewProps> = ({
             {/* Recent Items */}
             <div className="grid lg:grid-cols-2 gap-6">
               {/* Recent Listings */}
-              <div className="bg-[#2a4347] rounded-xl border border-white/5 p-6">
+              <div className="bg-[#5c090f] rounded-xl border border-white/5 p-6">
                 <h3 
                   className="text-white font-semibold mb-4"
                   style={{ fontFamily: 'Kaisei Opti, serif' }}
@@ -263,7 +263,7 @@ const AdminView: React.FC<AdminViewProps> = ({
               </div>
 
               {/* Recent Articles */}
-              <div className="bg-[#2a4347] rounded-xl border border-white/5 p-6">
+              <div className="bg-[#5c090f] rounded-xl border border-white/5 p-6">
                 <h3 
                   className="text-white font-semibold mb-4"
                   style={{ fontFamily: 'Kaisei Opti, serif' }}
@@ -325,7 +325,7 @@ const AdminView: React.FC<AdminViewProps> = ({
               </h2>
               <button
                 onClick={() => openCreateModal('property')}
-                className="flex items-center gap-2 px-4 py-2 bg-[#eaae31] text-[#2a4347] rounded-lg font-medium hover:bg-[#eaae31]/90 transition-colors"
+                className="flex items-center gap-2 px-4 py-2 bg-[#febd14] text-[#5c090f] rounded-lg font-medium hover:bg-[#febd14]/90 transition-colors"
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
               >
                 <Plus className="w-4 h-4" />
@@ -333,7 +333,7 @@ const AdminView: React.FC<AdminViewProps> = ({
               </button>
             </div>
 
-            <div className="bg-[#2a4347] rounded-xl border border-white/5 overflow-hidden">
+            <div className="bg-[#5c090f] rounded-xl border border-white/5 overflow-hidden">
               <div className="overflow-x-auto">
                 <table className="w-full">
                   <thead>
@@ -361,7 +361,7 @@ const AdminView: React.FC<AdminViewProps> = ({
                         </td>
                         <td className="p-4 text-white/60 text-sm" style={{ fontFamily: 'Kaisei Opti, serif' }}>{property.city}</td>
                         <td className="p-4 text-white/60 text-sm" style={{ fontFamily: 'Kaisei Opti, serif' }}>{property.property_type}</td>
-                        <td className="p-4 text-[#eaae31] text-sm font-medium" style={{ fontFamily: 'Kaisei Opti, serif' }}>
+                        <td className="p-4 text-[#febd14] text-sm font-medium" style={{ fontFamily: 'Kaisei Opti, serif' }}>
                           KES {(property.price / 1000000).toFixed(1)}M
                         </td>
                         <td className="p-4">
@@ -410,7 +410,7 @@ const AdminView: React.FC<AdminViewProps> = ({
               </h2>
               <button
                 onClick={() => openCreateModal('article')}
-                className="flex items-center gap-2 px-4 py-2 bg-[#eaae31] text-[#2a4347] rounded-lg font-medium hover:bg-[#eaae31]/90 transition-colors"
+                className="flex items-center gap-2 px-4 py-2 bg-[#febd14] text-[#5c090f] rounded-lg font-medium hover:bg-[#febd14]/90 transition-colors"
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
               >
                 <Plus className="w-4 h-4" />
@@ -422,7 +422,7 @@ const AdminView: React.FC<AdminViewProps> = ({
               {articles.map((article) => (
                 <div 
                   key={article.id}
-                  className="flex items-center justify-between p-4 bg-[#2a4347] rounded-xl border border-white/5"
+                  className="flex items-center justify-between p-4 bg-[#5c090f] rounded-xl border border-white/5"
                 >
                   <div className="flex items-center gap-4">
                     <img
@@ -476,7 +476,7 @@ const AdminView: React.FC<AdminViewProps> = ({
               </h2>
               <button
                 onClick={() => openCreateModal('podcast')}
-                className="flex items-center gap-2 px-4 py-2 bg-[#eaae31] text-[#2a4347] rounded-lg font-medium hover:bg-[#eaae31]/90 transition-colors"
+                className="flex items-center gap-2 px-4 py-2 bg-[#febd14] text-[#5c090f] rounded-lg font-medium hover:bg-[#febd14]/90 transition-colors"
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
               >
                 <Plus className="w-4 h-4" />
@@ -488,7 +488,7 @@ const AdminView: React.FC<AdminViewProps> = ({
               {podcasts.map((podcast) => (
                 <div 
                   key={podcast.id}
-                  className="flex items-center justify-between p-4 bg-[#2a4347] rounded-xl border border-white/5"
+                  className="flex items-center justify-between p-4 bg-[#5c090f] rounded-xl border border-white/5"
                 >
                   <div className="flex items-center gap-4">
                     <div className="w-16 h-16 rounded-lg bg-purple-500/10 flex items-center justify-center">
@@ -553,7 +553,7 @@ const AdminView: React.FC<AdminViewProps> = ({
       {showModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
           <div className="absolute inset-0 bg-black/70" onClick={() => setShowModal(false)} />
-          <div className="relative w-full max-w-2xl bg-[#2a4347] rounded-xl p-6 max-h-[90vh] overflow-y-auto">
+          <div className="relative w-full max-w-2xl bg-[#5c090f] rounded-xl p-6 max-h-[90vh] overflow-y-auto">
             <div className="flex items-center justify-between mb-6">
               <h2 
                 className="text-white text-xl font-semibold"
@@ -583,7 +583,7 @@ const AdminView: React.FC<AdminViewProps> = ({
                 Cancel
               </button>
               <button
-                className="flex items-center gap-2 px-4 py-2 bg-[#eaae31] text-[#2a4347] rounded-lg font-medium hover:bg-[#eaae31]/90 transition-colors"
+                className="flex items-center gap-2 px-4 py-2 bg-[#febd14] text-[#5c090f] rounded-lg font-medium hover:bg-[#febd14]/90 transition-colors"
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
               >
                 <Save className="w-4 h-4" />

@@ -41,7 +41,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
   };
 
   return (
-    <div className="group bg-[#1e3235] rounded-xl overflow-hidden border border-white/5 hover:border-[#eaae31]/30 transition-all duration-300">
+    <div className="group bg-[#5c090f] rounded-xl overflow-hidden border border-white/5 hover:border-[#febd14]/30 transition-all duration-300">
       {/* Image */}
       <div className="relative aspect-[4/3] overflow-hidden">
         <img
@@ -73,7 +73,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
             className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center text-white hover:bg-white/20 transition-colors"
           >
             {isSaved ? (
-              <BookmarkCheck className="w-5 h-5 text-[#eaae31]" />
+              <BookmarkCheck className="w-5 h-5 text-[#febd14]" />
             ) : (
               <Bookmark className="w-5 h-5" />
             )}
@@ -83,7 +83,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
         {/* Price */}
         <div className="absolute bottom-4 left-4">
           <p 
-            className="text-[#eaae31] text-xl font-bold"
+            className="text-[#febd14] text-xl font-bold"
             style={{ fontFamily: 'Kaisei Opti, serif' }}
           >
             {formatPrice(property.price, property.price_currency)}
@@ -94,7 +94,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
         {property.featured && (
           <div className="absolute top-4 left-1/2 -translate-x-1/2">
             <span 
-              className="px-3 py-1 rounded-full text-xs font-medium bg-[#eaae31] text-[#2a4347] uppercase tracking-wide"
+              className="px-3 py-1 rounded-full text-xs font-medium bg-[#febd14] text-[#5c090f] uppercase tracking-wide"
               style={{ fontFamily: 'Kaisei Opti, serif' }}
             >
               Featured
@@ -107,7 +107,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
       <div className="p-5">
         <div className="flex items-start justify-between gap-2 mb-3">
           <h3 
-            className="text-white text-lg font-semibold line-clamp-1 group-hover:text-[#eaae31] transition-colors"
+            className="text-white text-lg font-semibold line-clamp-1 group-hover:text-[#febd14] transition-colors"
             style={{ fontFamily: 'Kaisei Opti, serif' }}
           >
             {property.name}
@@ -154,7 +154,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
         {/* View Details Button */}
         <button
           onClick={() => onViewDetails(property)}
-          className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-white/5 hover:bg-[#eaae31] text-white hover:text-[#2a4347] rounded-lg transition-all duration-300 group/btn"
+          className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-white/5 hover:bg-[#febd14] text-white hover:text-[#5c090f] rounded-lg transition-all duration-300 group/btn"
           style={{ fontFamily: 'Kaisei Opti, serif' }}
         >
           <span className="text-sm font-medium">View Details</span>

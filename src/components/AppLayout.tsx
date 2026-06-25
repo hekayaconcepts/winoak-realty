@@ -387,11 +387,11 @@ const AppLayout: React.FC = () => {
   // Loading state
   if (propertiesLoading && articlesLoading && podcastsLoading) {
     return (
-      <div className="min-h-screen bg-[#2a4347] flex items-center justify-center">
+      <div className="min-h-screen bg-[#5c090f] flex items-center justify-center">
         <div className="text-center">
           <img 
             src="https://d64gsuwffb70l.cloudfront.net/696a15fcf7f37ab46f03b95f_1768560149377_0263ab94.png" 
-            alt="The African Property Brief" 
+            alt="WinOak Realty" 
             className="h-16 w-auto mx-auto mb-4 animate-pulse"
           />
           <p 
@@ -406,7 +406,7 @@ const AppLayout: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-[#2a4347]">
+    <div className="min-h-screen bg-[#5c090f]">
       {/* Header */}
       <Header
         currentView={currentView}
@@ -434,7 +434,7 @@ const AppLayout: React.FC = () => {
       {isAuthenticated && (
         <button
           onClick={() => handleNavigate('admin')}
-          className="fixed bottom-4 right-4 w-12 h-12 rounded-full bg-[#eaae31] text-[#2a4347] shadow-lg flex items-center justify-center hover:bg-[#eaae31]/90 transition-colors z-40"
+          className="fixed bottom-4 right-4 w-12 h-12 rounded-full bg-[#febd14] text-[#5c090f] shadow-lg flex items-center justify-center hover:bg-[#febd14]/90 transition-colors z-40"
           title="Admin Panel"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

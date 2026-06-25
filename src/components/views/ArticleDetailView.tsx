@@ -50,7 +50,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
         {article.category && (
           <div className="mb-6">
             <span 
-              className="inline-block px-4 py-2 rounded-full bg-[#eaae31]/10 text-[#eaae31] text-sm font-medium"
+              className="inline-block px-4 py-2 rounded-full bg-[#febd14]/10 text-[#febd14] text-sm font-medium"
               style={{ fontFamily: 'Kaisei Opti, serif' }}
             >
               {article.category.name}
@@ -99,7 +99,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
                 className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/10 transition-colors"
               >
                 {isSaved ? (
-                  <BookmarkCheck className="w-5 h-5 text-[#eaae31]" />
+                  <BookmarkCheck className="w-5 h-5 text-[#febd14]" />
                 ) : (
                   <Bookmark className="w-5 h-5" />
                 )}
@@ -115,13 +115,13 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
 
         {/* Audio Player */}
         {article.audio_url && (
-          <div className="mb-8 p-6 bg-[#1e3235] rounded-xl border border-white/5">
+          <div className="mb-8 p-6 bg-[#5c090f] rounded-xl border border-white/5">
             <div className="flex items-center gap-4">
-              <button className="w-14 h-14 rounded-full bg-[#eaae31] flex items-center justify-center flex-shrink-0">
-                <Play className="w-6 h-6 text-[#2a4347] ml-1" />
+              <button className="w-14 h-14 rounded-full bg-[#febd14] flex items-center justify-center flex-shrink-0">
+                <Play className="w-6 h-6 text-[#5c090f] ml-1" />
               </button>
               <div className="flex-1">
-                <div className="flex items-center gap-2 text-[#eaae31] text-sm mb-1">
+                <div className="flex items-center gap-2 text-[#febd14] text-sm mb-1">
                   <Headphones className="w-4 h-4" />
                   <span style={{ fontFamily: 'Kaisei Opti, serif' }}>Audio Version Available</span>
                 </div>
@@ -183,11 +183,11 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
         )}
 
         {/* Author Box */}
-        <div className="mt-12 p-6 bg-[#1e3235] rounded-xl border border-white/5">
+        <div className="mt-12 p-6 bg-[#5c090f] rounded-xl border border-white/5">
           <div className="flex items-start gap-4">
-            <div className="w-16 h-16 rounded-full bg-[#eaae31]/10 flex items-center justify-center flex-shrink-0">
+            <div className="w-16 h-16 rounded-full bg-[#febd14]/10 flex items-center justify-center flex-shrink-0">
               <span 
-                className="text-[#eaae31] text-xl font-bold"
+                className="text-[#febd14] text-xl font-bold"
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
               >
                 APB
@@ -204,7 +204,7 @@ const ArticleDetailView: React.FC<ArticleDetailViewProps> = ({
                 className="text-white/60 text-sm leading-relaxed"
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
               >
-                The African Property Brief publishes investor-grade real estate analysis for 
+                WinOak Realty publishes investor-grade real estate analysis for 
                 international investors, diaspora buyers, and global real estate advisors.
               </p>
             </div>

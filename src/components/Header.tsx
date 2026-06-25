@@ -32,7 +32,7 @@ const Header: React.FC<HeaderProps> = ({ currentView, onNavigate, isAuthenticate
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#2a4347]/95 backdrop-blur-sm border-b border-white/10">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#5c090f] border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
@@ -40,11 +40,12 @@ const Header: React.FC<HeaderProps> = ({ currentView, onNavigate, isAuthenticate
             className="flex items-center cursor-pointer" 
             onClick={() => onNavigate('home')}
           >
-            <img 
-              src="https://d64gsuwffb70l.cloudfront.net/696a15fcf7f37ab46f03b95f_1768560149377_0263ab94.png" 
-              alt="The African Property Brief" 
-              className="h-10 md:h-12 w-auto"
-            />
+            <div className="flex items-center gap-2">
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#ff8b40' }}>
+                <span className="text-lg font-bold" style={{ fontFamily: 'Kaisei Opti, serif' }}>W</span>
+              </div>
+              <span className="text-lg font-bold" style={{ fontFamily: 'Kaisei Opti, serif' }}>WinOak</span>
+            </div>
           </div>
 
           {/* Desktop Navigation */}
@@ -55,10 +56,10 @@ const Header: React.FC<HeaderProps> = ({ currentView, onNavigate, isAuthenticate
                 onClick={() => onNavigate(item.view)}
                 className={`text-sm font-medium transition-colors whitespace-nowrap ${
                   currentView === item.view
-                    ? 'text-[#eaae31]'
-                    : 'text-white/80 hover:text-white'
+                    ? 'text-[#febd14]'
+                    : 'text-white/90 hover:text-white'
                 }`}
-                style={{ fontFamily: 'Kaisei Opti, serif' }}
+                style={{ fontFamily: 'Kaisei Opti, serif', color: currentView === item.view ? '#febd14' : '#ffffff' }}
               >
                 {item.view === 'market-yields' ? (
                   <span className="flex items-center gap-1.5">
@@ -80,8 +81,8 @@ const Header: React.FC<HeaderProps> = ({ currentView, onNavigate, isAuthenticate
                   onClick={() => setUserMenuOpen(!userMenuOpen)}
                   className="flex items-center space-x-2 text-white/80 hover:text-white transition-colors"
                 >
-                  <div className="w-8 h-8 rounded-full bg-[#eaae31] flex items-center justify-center">
-                    <User className="w-4 h-4 text-[#2a4347]" />
+                  <div className="w-8 h-8 rounded-full bg-[#ff8b40] flex items-center justify-center">
+                    <User className="w-4 h-4 text-[#5c090f]" />
                   </div>
                   <ChevronDown className="w-4 h-4" />
                 </button>
@@ -89,7 +90,7 @@ const Header: React.FC<HeaderProps> = ({ currentView, onNavigate, isAuthenticate
                 {userMenuOpen && (
                   <>
                     <div className="fixed inset-0 z-40" onClick={() => setUserMenuOpen(false)} />
-                    <div className="absolute right-0 mt-2 w-48 bg-[#2a4347] border border-white/10 rounded-lg shadow-xl py-2 z-50">
+                    <div className="absolute right-0 mt-2 w-48 bg-[#5c090f] border border-white/10 rounded-lg shadow-xl py-2 z-50">
                       {authenticatedNavItems.map((item) => (
                         <button
                           key={item.view}
@@ -121,7 +122,7 @@ const Header: React.FC<HeaderProps> = ({ currentView, onNavigate, isAuthenticate
             ) : (
               <button
                 onClick={onAuthClick}
-                className="px-4 py-2 text-sm font-medium text-[#2a4347] bg-[#eaae31] rounded-lg hover:bg-[#eaae31]/90 transition-colors"
+                className="px-4 py-2 text-sm font-medium text-[#0f0f0f] bg-[#ff8b40] rounded-lg hover:bg-[#ff8b40]/90 transition-colors"
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
               >
                 Sign In
@@ -141,7 +142,7 @@ const Header: React.FC<HeaderProps> = ({ currentView, onNavigate, isAuthenticate
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#2a4347] border-t border-white/10">
+        <div className="lg:hidden bg-[#5c090f] border-t border-white/10">
           <div className="px-4 py-4 space-y-2">
             {navItems.map((item) => (
               <button
@@ -152,10 +153,10 @@ const Header: React.FC<HeaderProps> = ({ currentView, onNavigate, isAuthenticate
                 }}
                 className={`block w-full text-left px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
                   currentView === item.view
-                    ? 'text-[#eaae31] bg-white/5'
+                    ? 'text-[#febd14] bg-white/5'
                     : 'text-white/80 hover:text-white hover:bg-white/5'
                 }`}
-                style={{ fontFamily: 'Kaisei Opti, serif' }}
+                style={{ fontFamily: 'Kaisei Opti, serif', color: currentView === item.view ? '#febd14' : '#ffffff' }}
               >
                 {item.view === 'market-yields' ? (
                   <span className="flex items-center gap-2">
@@ -180,7 +181,7 @@ const Header: React.FC<HeaderProps> = ({ currentView, onNavigate, isAuthenticate
                     }}
                     className={`block w-full text-left px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
                       currentView === item.view
-                        ? 'text-[#eaae31] bg-white/5'
+                        ? 'text-[#febd14] bg-white/5'
                         : 'text-white/80 hover:text-white hover:bg-white/5'
                     }`}
                     style={{ fontFamily: 'Kaisei Opti, serif' }}
@@ -197,7 +198,7 @@ const Header: React.FC<HeaderProps> = ({ currentView, onNavigate, isAuthenticate
                 onAuthClick();
                 setMobileMenuOpen(false);
               }}
-              className="w-full px-4 py-3 text-sm font-medium text-[#2a4347] bg-[#eaae31] rounded-lg hover:bg-[#eaae31]/90 transition-colors"
+              className="w-full px-4 py-3 text-sm font-medium text-[#0f0f0f] bg-[#ff8b40] rounded-lg hover:bg-[#ff8b40]/90 transition-colors"
               style={{ fontFamily: 'Kaisei Opti, serif' }}
             >
               {isAuthenticated ? 'Sign Out' : 'Sign In'}
