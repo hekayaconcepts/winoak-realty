@@ -41,7 +41,7 @@ const Header: React.FC<HeaderProps> = ({ currentView, onNavigate, isAuthenticate
             onClick={() => onNavigate('home')}
           >
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#ff8b40' }}>
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#edbf6d' }}>
                 <span className="text-lg font-bold" style={{ fontFamily: 'Kaisei Opti, serif' }}>W</span>
               </div>
               <span className="text-lg font-bold" style={{ fontFamily: 'Kaisei Opti, serif' }}>WinOak</span>
@@ -81,7 +81,7 @@ const Header: React.FC<HeaderProps> = ({ currentView, onNavigate, isAuthenticate
                   onClick={() => setUserMenuOpen(!userMenuOpen)}
                   className="flex items-center space-x-2 text-white/80 hover:text-white transition-colors"
                 >
-                  <div className="w-8 h-8 rounded-full bg-[#ff8b40] flex items-center justify-center">
+                  <div className="w-8 h-8 rounded-full bg-[#edbf6d] flex items-center justify-center">
                     <User className="w-4 h-4 text-[#5c090f]" />
                   </div>
                   <ChevronDown className="w-4 h-4" />
@@ -122,7 +122,7 @@ const Header: React.FC<HeaderProps> = ({ currentView, onNavigate, isAuthenticate
             ) : (
               <button
                 onClick={onAuthClick}
-                className="px-4 py-2 text-sm font-medium text-[#0f0f0f] bg-[#ff8b40] rounded-lg hover:bg-[#ff8b40]/90 transition-colors"
+                className="px-4 py-2 text-sm font-medium text-[#0f0f0f] bg-[#edbf6d] rounded-lg hover:bg-[#edbf6d]/90 transition-colors"
                 style={{ fontFamily: 'Kaisei Opti, serif' }}
               >
                 Sign In
@@ -198,7 +198,7 @@ const Header: React.FC<HeaderProps> = ({ currentView, onNavigate, isAuthenticate
                 onAuthClick();
                 setMobileMenuOpen(false);
               }}
-              className="w-full px-4 py-3 text-sm font-medium text-[#0f0f0f] bg-[#ff8b40] rounded-lg hover:bg-[#ff8b40]/90 transition-colors"
+              className="w-full px-4 py-3 text-sm font-medium text-[#0f0f0f] bg-[#edbf6d] rounded-lg hover:bg-[#edbf6d]/90 transition-colors"
               style={{ fontFamily: 'Kaisei Opti, serif' }}
             >
               {isAuthenticated ? 'Sign Out' : 'Sign In'}
